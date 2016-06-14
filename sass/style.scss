@@ -1,15 +1,21 @@
-//=========================
-// @@ ++ Base
-//=========================
 @import "base/reset";
-//@import "base/normalize";
-@import "base/variables";
-@import "base/globals";
+
 
 //=========================
 // @@ ++ Vendor
 //=========================
 @import "vendor/bootstrap.min";
+
+
+//=========================
+// @@ ++ Base
+//=========================
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One);
+@import "base/variables";
+@import "base/globals";
+
+
 
 //=========================
 // @@ ++ Mixin
@@ -19,6 +25,8 @@
 //=========================
 // @@ ++ Layout
 //=========================
+@import "layout/sections";
+@import "layout/footer";
 
 
 //========================
