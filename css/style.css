@@ -5671,7 +5671,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif; }
 
 h1 {
-  font-size: 3.5em; }
+  font-size: 3.3em; }
 
 h2 {
   font-size: 3em; }
@@ -5681,6 +5681,11 @@ h3 {
 
 h4 {
   font-size: 2em; }
+
+.paragraph {
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center; }
 
 .section--homepage {
   height: 100vh;
@@ -5723,21 +5728,34 @@ h4 {
   justify-content: center; }
   .section--corebusiness .corebusiness__item {
     background-color: #888888;
-    padding: 15px;
+    padding: 35px 15px;
     color: #ffffff;
-    min-height: 40vh; }
+    min-height: 37vh; }
   .section--corebusiness .corebusiness__img {
     overflow: hidden; }
-
-.paragraph {
-  font-size: 22px;
-  line-height: 32px;
-  text-align: center; }
 
 .footer {
   background-color: #000000;
   color: #ffffff;
   padding: 15px 0; }
+
+.btn--cta {
+  margin-top: 15px;
+  display: inline-block; }
+
+.btncta__btn {
+  padding: 4px 30px 4px 90px;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  background-image: url("../images/icon_rund.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em; }
+  .btncta__btn:hover {
+    color: #000000;
+    background-color: #ffffff; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/ }

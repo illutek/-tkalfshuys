@@ -53,19 +53,13 @@
   justify-content: center;
   .corebusiness__item {
     background-color: $darkgrey;
-    padding: 15px;
+    padding: 35px 15px;
     color: #ffffff;
-    min-height: 40vh;
+    min-height: 37vh;
   }
   .corebusiness__title {
   }
   .corebusiness__img {
     overflow: hidden;
   }
-}
-
-.paragraph {
-  font-size: 22px;
-  line-height: 32px;
-  text-align: center;
 }
