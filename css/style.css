@@ -5726,12 +5726,12 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .section--corebusiness .corebusiness__item {
+  .section--corebusiness .corebusiness__region .corebusiness__item {
     background-color: #888888;
     padding: 35px 15px;
     color: #ffffff;
     min-height: 37vh; }
-  .section--corebusiness .corebusiness__img {
+  .section--corebusiness .corebusiness__region .corebusiness__img {
     overflow: hidden; }
 
 .footer {

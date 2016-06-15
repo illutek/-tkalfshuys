@@ -1,0 +1,22 @@
+//================================
+// @@ ++ Buttons
+//================================
+.btn--cta {
+  margin-top: 15px;
+  display: inline-block;
+}
+.btncta__btn {
+  padding: 4px 30px 4px 90px;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  background-image: url("../images/icon_rund.png" );
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2em;
+  &:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
