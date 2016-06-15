@@ -5684,39 +5684,48 @@ h4 {
 
 .section--homepage {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: url("../images/runderen.jpg") no-repeat;
   background-size: cover; }
-  .section--homepage .homepage__logo--slogan {
-    margin-top: 450px; }
-    .section--homepage .homepage__logo--slogan h1 {
-      color: #ffffff; }
+  .section--homepage h1 {
+    color: #ffffff; }
 
 .section--50 {
-  height: 50vh; }
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .section--quality {
   color: #ffffff;
   background: url("../images/background_lozenge_36.jpg") repeat; }
   .section--quality .container--quality {
-    padding-top: 150px;
     background-color: #f6656a;
-    height: 50vh; }
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .section--aboutus {
-  padding-top: 130px;
-  color: #6e0908;
-  text-align: center;
-  overflow: hidden; }
+  color: #6e0908; }
+  .section--aboutus .container--aboutus {
+    padding: 40px 10px; }
+    .section--aboutus .container--aboutus header {
+      text-align: center; }
 
 .section--corebusiness {
-  height: 100vh;
-  padding-top: 12%;
-  background-color: #adadad; }
+  min-height: 100vh;
+  background-color: #adadad;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .section--corebusiness .corebusiness__item {
     background-color: #888888;
     padding: 15px;
     color: #ffffff;
-    height: 40vh; }
+    min-height: 40vh; }
   .section--corebusiness .corebusiness__img {
     overflow: hidden; }
 
@@ -5725,7 +5734,7 @@ h4 {
   line-height: 32px;
   text-align: center; }
 
-footer {
+.footer {
   background-color: #000000;
   color: #ffffff;
   padding: 15px 0; }
@@ -5739,6 +5748,21 @@ footer {
 @media only screen and (max-width: 767px) {
   /* css code voor smartphones in landscape mode */ }
 @media only screen and (max-width: 479px) {
-  /* css code voor smartphones in portrait mode */ }
+  /* css code voor smartphones in portrait mode */
+  .section--quality {
+    padding: 15px 0; }
+    .section--quality .paragraph {
+      padding: 15px 0; }
+    .section--quality .logo {
+      display: none; }
+
+  .corebusiness__region {
+    margin: 10px 0; }
+
+  h2 {
+    font-size: 2.5em; }
+
+  h3 {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

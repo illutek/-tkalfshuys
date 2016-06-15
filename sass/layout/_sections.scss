@@ -5,49 +5,59 @@
 
 .section--homepage {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: url("../images/runderen.jpg") no-repeat;
   background-size: cover;
-  .homepage__logo--slogan {
-    margin-top: 450px;
-    h1 {
-      color: #ffffff;
-    }
+  h1 {
+    color: #ffffff;
   }
+
 }
 
 .section--50 {
-  height: 50vh;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section--quality {
   color: #ffffff;
   background: url("../images/background_lozenge_36.jpg") repeat;
   .container--quality {
-    padding-top: 150px;
     background-color: $pink;
-    height: 50vh;
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .section--aboutus {
-  padding-top: 130px;
   color: $bordeau;
-  text-align: center;
-  overflow: hidden;
+  .container--aboutus {
+    padding: 40px 10px;
+    header {
+      text-align: center;
+    }
+  }
 }
 
 .section--corebusiness {
-  height: 100vh;
-  padding-top: 12%;
+  min-height: 100vh;
   background-color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .corebusiness__item {
     background-color: $darkgrey;
     padding: 15px;
     color: #ffffff;
-    height: 40vh;
+    min-height: 40vh;
   }
   .corebusiness__title {
-
   }
   .corebusiness__img {
     overflow: hidden;

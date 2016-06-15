@@ -5,9 +5,11 @@
     <title>'t Kalfshuys</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
 <!-- navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -36,7 +38,7 @@
     <!-- /.container-fluid -->
 </nav>
 
-<section class="section--homepage">
+<section class="section--homepage container-fluid">
     <div class="container homepage--container">
         <div class="homepage__logo--slogan">
             <div class="row">
@@ -50,10 +52,11 @@
         </div>
     </div>
 </section>
+
 <section class="section--quality section--50">
     <div class="container container--quality">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 logo">
                 <img src="../logo.png">
             </div>
             <div class="col-md-9">
@@ -67,69 +70,79 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 </section>
 <section class="section--aboutus section--50">
     <div class="container container--aboutus">
-        <h2>Een familiebedrijf met passie en ervaring!</h2>
-
-        <h3>Over ons en onze visie</h3>
-
-        <div class="paragraph">
-            <p>Wij zijn een familiebedrijf dat op een eerlijke manier kalfs en rundvlees produceert en rechtstreeks
-                verkoopt aan de consument. Wij garanderen u dat ons vers vlees op een correcte manier geproduceerd wordt
-                en voor een gunstige prijs aan de consument verkocht kan worden. Dit doen we zonder te besparen op
-                voeders en huisvestingskosten zodat een kwalitatief hoogstaand product afgeleverd kan worden.</p>
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h2>Een familiebedrijf met passie en ervaring!</h2>
+                    <h3>Over ons en onze visie</h3>
+                </header>
+                <div class="paragraph">
+                    <p>Wij zijn een familiebedrijf dat op een eerlijke manier kalfs en rundvlees produceert en rechtstreeks
+                        verkoopt aan de consument. Wij garanderen u dat ons vers vlees op een correcte manier geproduceerd wordt
+                        en voor een gunstige prijs aan de consument verkocht kan worden. Dit doen we zonder te besparen op
+                        voeders en huisvestingskosten zodat een kwalitatief hoogstaand product afgeleverd kan worden.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <section class="section--corebusiness">
     <div class="container container--corebusiness">
-        <div class="col-md-4">
-            <div class="corebusiness__img">
-                <img src="../images/kalf.jpg">
+        <div class="row">
+            <div class="col-md-4 corebusiness__region">
+                <div class="corebusiness__img">
+                    <img src="../images/kalf.jpg">
+                </div>
+                <div class="corebusiness__item">
+                    <p>Het kalfsvlees dat we u verkopen is onze specialiteit. Belgische witblauw kalveren worden gekocht
+                        bij plaatselijke boeren en worden gevoederd met producten afkomstig van ons eigen bedrijf.
+                        De dieren worden op stro gehouden en met de grootste zorgen op een diervriendelijke manier
+                        gekweekt. Het vlees dat deze kalveren afleveren is rosé van kleur en iets sterker van smaak.</p>
+                    <header>
+                        <h4 class="corebusiness__title">KALFSVLEES</h4>
+                    </header>
+                </div>
             </div>
-            <div class="corebusiness__item">
-                <p>Het kalfsvlees dat we u verkopen is onze specialiteit. Belgische witblauw kalveren worden gekocht
-                    bij plaatselijke boeren en worden gevoederd met producten afkomstig van ons eigen bedrijf.
-                    De dieren worden op stro gehouden en met de grootste zorgen op een diervriendelijke manier
-                    gekweekt. Het vlees dat deze kalveren afleveren is rosé van kleur en iets sterker van smaak.</p>
-                <h4 class="corebusiness__title">KALFSVLEES</h4>
-
+            <div class="col-md-4 corebusiness__region">
+                <div class="corebusiness__img">
+                    <img src="../images/rund.jpg">
+                </div>
+                <div class="corebusiness__item">
+                    <p>Onze limousine runderen lopen in de zomer op onze weide en in de winter op stal.
+                        Ze worden gevoederd met ruwvoeders afkomstig van ons eigen bedrijf zodat de dieren op een
+                        rustige en ongeforceerde wijze kunnen groeien.
+                        Dit garandeert mals vlees, licht doorregend met een beetje vet om de typische smaak van het
+                        ras te garanderen.
+                    </p>
+                    <header>
+                        <h4 class="corebusiness__title">RUNDSVLEES</h4>
+                    </header>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="corebusiness__img">
-                <img src="../images/rund.jpg">
-            </div>
-            <div class="corebusiness__item">
-                <p>Onze limousine runderen lopen in de zomer op onze weide en in de winter op stal.
-                    Ze worden gevoederd met ruwvoeders afkomstig van ons eigen bedrijf zodat de dieren op een
-                    rustige en ongeforceerde wijze kunnen groeien.
-                    Dit garandeert mals vlees, licht doorregend met een beetje vet om de typische smaak van het
-                    ras te garanderen.
-                </p>
-                <h4 class="corebusiness__title">RUNDSVLEES</h4>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="corebusiness__img">
-                <img src="../images/versnijden.jpg">
-            </div>
-            <div class="corebusiness__item">
-                <p>Het vlees wordt versneden en verpakt bij een plaatselijke slager om de klant de versheid van ons
-                    product te kunnen garanderen.
-                    Uiteraard zijn wij ook bij dit proces zeer nauw betrokken, zodat de garanties die we bieden
-                    verzekerd blijven.
-                </p>
-                <h4 class="corebusiness__title">VERSNIJDEN & VERPAKKEN</h4>
+            <div class="col-md-4 corebusiness__region">
+                <div class="corebusiness__img">
+                    <img src="../images/versnijden.jpg">
+                </div>
+                <div class="corebusiness__item">
+                    <p>Het vlees wordt versneden en verpakt bij een plaatselijke slager om de klant de versheid van ons
+                        product te kunnen garanderen.
+                        Uiteraard zijn wij ook bij dit proces zeer nauw betrokken, zodat de garanties die we bieden
+                        verzekerd blijven.
+                    </p>
+                    <header>
+                        <h4 class="corebusiness__title">VERSNIJDEN & VERPAKKEN</h4>
+                    </header>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<footer>
+<footer class="footer">
     <div class="container">
         <p>'t Kalfshuys © 2016</p>
     </div>

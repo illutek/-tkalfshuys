@@ -20,4 +20,23 @@
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
+  .section--quality {
+    padding: 15px 0;
+    .paragraph {
+      padding: 15px 0;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  .corebusiness__region {
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+
 }
