@@ -11,9 +11,13 @@
   background: url("../images/runderen.jpg") no-repeat;
   background-size: cover;
   h1 {
+
     color: #ffffff;
   }
+}
 
+.sectionhomepage__title__cta {
+ padding-top: 50px;
 }
 
 .section--50 {
@@ -40,27 +44,41 @@
   .container--aboutus {
     padding: 40px 10px;
     header {
+      h2 {
+        margin-bottom: 15px;
+      }
       text-align: center;
+      margin-bottom: 15px;
     }
   }
 }
 
+// section--corebusiness
+// ======================================
+
 .section--corebusiness {
+  color: #ffffff;
   min-height: 100vh;
   background-color: $grey;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   .corebusiness__region {
-
+    height: 650px;
+    background-color: $darkgrey;
+    header {
+      position:absolute;
+      bottom:0;
+      h4 {
+        margin: 20px 0;
+      }
+    }
     .corebusiness__item {
-      background-color: $darkgrey;
       padding: 35px 15px;
-      color: #ffffff;
       min-height: 37vh;
     }
     .corebusiness__title {
-
     }
     .corebusiness__img {
       overflow: hidden;

@@ -2027,19 +2027,16 @@ h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif; }
 
 h1 {
-  font-size: 3.3em;
-  line-height: 3.2em; }
+  font-size: 3.3em; }
 
 h2 {
   font-size: 3em; }
 
 h3 {
-  font-size: 2.5em;
-  line-height: 2em; }
+  font-size: 2.5em; }
 
 h4 {
-  font-size: 2em;
-  line-height: 1.5em; }
+  font-size: 2em; }
 
 h5 {
   font-size: 1.5em;
@@ -2059,6 +2056,9 @@ h5 {
   background-size: cover; }
   .section--homepage h1 {
     color: #ffffff; }
+
+.sectionhomepage__title__cta {
+  padding-top: 50px; }
 
 .section--50 {
   min-height: 50vh;
@@ -2081,21 +2081,32 @@ h5 {
   .section--aboutus .container--aboutus {
     padding: 40px 10px; }
     .section--aboutus .container--aboutus header {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 15px; }
+      .section--aboutus .container--aboutus header h2 {
+        margin-bottom: 15px; }
 
 .section--corebusiness {
+  color: #ffffff;
   min-height: 100vh;
   background-color: #adadad;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center; }
-  .section--corebusiness .corebusiness__region .corebusiness__item {
-    background-color: #888888;
-    padding: 35px 15px;
-    color: #ffffff;
-    min-height: 37vh; }
-  .section--corebusiness .corebusiness__region .corebusiness__img {
-    overflow: hidden; }
+  .section--corebusiness .corebusiness__region {
+    height: 650px;
+    background-color: #888888; }
+    .section--corebusiness .corebusiness__region header {
+      position: absolute;
+      bottom: 0; }
+      .section--corebusiness .corebusiness__region header h4 {
+        margin: 20px 0; }
+    .section--corebusiness .corebusiness__region .corebusiness__item {
+      padding: 35px 15px;
+      min-height: 37vh; }
+    .section--corebusiness .corebusiness__region .corebusiness__img {
+      overflow: hidden; }
 
 .footer {
   background-color: #000000;
@@ -2155,6 +2166,13 @@ h5 {
     font-size: 2.5em; }
 
   h3 {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .btncta__btn {
+    padding: 14px 30px 14px 90px;
+    font-size: 1.6em; }
+
+  .footermain__item {
+    margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
