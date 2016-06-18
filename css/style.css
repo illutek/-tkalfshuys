@@ -5738,6 +5738,13 @@ h4 {
   background-color: #000000;
   color: #ffffff;
   padding: 15px 0; }
+  .footer a {
+    color: #ffffff; }
+    .footer a:hover {
+      text-decoration: none;
+      color: #adadad; }
+  .footer li {
+    padding: 10px 0; }
 
 .btn--cta {
   margin-top: 15px;

@@ -5,4 +5,14 @@
   background-color: #000000;
   color: #ffffff;
   padding: 15px 0;
+  a {
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: $grey;
+    }
+  }
+  li {
+    padding: 10px 0;
+  }
 }
