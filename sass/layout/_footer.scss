@@ -3,16 +3,24 @@
 //================================
 .footer {
   background-color: #000000;
-  color: #ffffff;
+  color: $grey;
   padding: 15px 0;
   a {
-    color: #ffffff;
+    color: $grey;
     &:hover {
       text-decoration: none;
-      color: $grey;
+      color: #ffffff;
     }
   }
   li {
     padding: 10px 0;
+  }
+  .mobilephone__each {
+    margin: 15px 0;
+  }
+  .copyright {
+    p {
+      font-size: 12px;
+    }
   }
 }
