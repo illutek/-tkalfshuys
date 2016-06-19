@@ -2110,8 +2110,22 @@ h5 {
 
 .footer {
   background-color: #000000;
-  color: #adadad;
+  color: #ffffff;
   padding: 15px 0; }
+  .footer .footer--main .footermain__item {
+    height: 370px;
+    padding: 25px;
+    text-align: center; }
+    .footer .footer--main .footermain__item .footermain-item__icon {
+      margin-bottom: 35px; }
+    .footer .footer--main .footermain__item header {
+      margin-bottom: 15px; }
+  .footer .footer--main .contact--region {
+    background: #B70A10; }
+  .footer .footer--main .call-us--region {
+    background: #f6656a; }
+  .footer .footer--main .social--region {
+    background: #3a80f1; }
   .footer a {
     color: #adadad; }
     .footer a:hover {

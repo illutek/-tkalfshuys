@@ -3,8 +3,30 @@
 //================================
 .footer {
   background-color: #000000;
-  color: $grey;
+  color: #ffffff;
   padding: 15px 0;
+  .footer--main {
+    .footermain__item {
+      height: 370px;
+      padding: 25px;
+      text-align: center;
+      .footermain-item__icon {
+        margin-bottom: 35px;
+      }
+      header {
+        margin-bottom: 15px;
+      }
+    }
+    .contact--region {
+      background: $red;
+    }
+    .call-us--region {
+      background: $pink;
+    }
+    .social--region {
+      background: $blue-social;
+    }
+  }
   a {
     color: $grey;
     &:hover {
