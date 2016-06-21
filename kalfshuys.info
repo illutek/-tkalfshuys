@@ -1,0 +1,24 @@
+name = 't Kalfshuys
+description = Drupal 7 theme voor 't Kalfshuys, eigenaar Steven Van Nijlen
+core = 7.x
+engine = phptemplate
+
+;STYLESHEETS
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+
+;JS
+scripts[]   =   js/jquery.min.js
+scripts[]   =   js/bootstrap.min.js
+scripts[]   =   js/facebook.js
+scripts[]   =   js/hamburger.js
+
+;REGIONS
+regions[content]    = Content
+regions[quality]    = Quality
+regions[aboutus]    = About US
+regions[corebusiness1]  = CoreBusiness 1
+regions[corebusiness2]  = CoreBusiness 2
+regions[corebusiness3]  = CoreBusiness 3
+regions[sidebar_first]  = Sidebar First
+regions[sidebar_second] = Sidebar Second

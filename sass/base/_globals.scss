@@ -1,6 +1,16 @@
 //================================
 // @@ ++ Globals
 //================================
+
+// dit voorkomt dat we geen rekening meer moeten houden met margins,
+// padding en borders
+// This ensures that all elements are always sized in this more intuitive way.
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
 }
@@ -16,33 +26,6 @@ p {
   line-height: 25px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Fjalla One', sans-serif;
-}
-
-h1 {
-  font-size: 3.3em;
-}
-
-h2 {
-  font-size: 3em;
-
-}
-
-h3 {
-  font-size: 2.5em;
-
-}
-
-h4 {
-  font-size: 2em;
-}
-
-h5 {
-  font-size: 1.5em;
-  padding: 10px 0;
-}
-
 .paragraph {
   p {
     font-size: 22px;
@@ -50,3 +33,11 @@ h5 {
     text-align: center;
   }
 }
+
+
+// Admin toolbar
+
+#toolbar {
+  margin-top: 50px;
+}
+

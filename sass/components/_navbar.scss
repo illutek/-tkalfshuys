@@ -1,0 +1,23 @@
+//================================
+// @@ ++ Navbar
+//================================
+
+.navbar-inverse {
+  .navbar-toggle {
+    border: none;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .navbar--brand {
+    a {
+      color: #ffffff;
+      &:hover {
+        color: $grey;
+      }
+    }
+    .navbar-brand {
+      padding: 20px 15px;
+    }
+  }
+}

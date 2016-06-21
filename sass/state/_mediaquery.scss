@@ -3,7 +3,10 @@
 //================================
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
-
+  /* facebook in de footer*/
+  ._2p3a {
+    width: 245px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -39,11 +42,26 @@
     font-size: 2em;
   }
   .btncta__btn {
-    padding: 14px 30px 14px 90px;
+    padding: 10px;
     font-size: 1.6em;
+    .fa-shopping-basket {
+      padding: 0 10px 0;
+    }
   }
   .footermain__item {
     margin-bottom: 25px;
   }
-
+  .footer {
+    .mobilephone__desktop {
+      display: none;
+    }
+    .mobilephone__mobile {
+      display: block;
+    }
+    .btnmobile__btn {
+      margin-top: 20px;
+      padding: 8px;
+      font-size: 1.2em;
+    }
+  }
 }

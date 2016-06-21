@@ -36,6 +36,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .sectionquality__img {
+      text-align: center;
+    }
   }
 }
 
@@ -76,12 +79,26 @@
     }
     .corebusiness__item {
       padding: 35px 15px;
-      min-height: 37vh;
+      //min-height: 37vh;
     }
     .corebusiness__title {
     }
     .corebusiness__img {
       overflow: hidden;
     }
+  }
+}
+
+.section--page {
+  background: $grey;
+  display: flex;
+  min-height: 93vh;
+  align-items: center;
+  justify-content: center;
+  .sectionpage__container {
+    background: $darkgrey;
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

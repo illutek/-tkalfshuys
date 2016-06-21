@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="../js/facebook.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/hamburger.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -20,11 +21,17 @@
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <!-- vendor/hamburger.scss -->
+                <div class="hamburger hamburger--spin">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
             </button>
-            <a class="navbar-brand" href="#">'t KALFSHUYS</a>
+            <!-- link aanpassen naar home page -->
+            <div class="navbar--brand">
+                <a class="navbar-brand" href="#"><h4>'T KALFSHUYS</h4></a>
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,7 +63,7 @@
                         <!-- de link naar bestel form zou gemakkelijk aanpasbaar moeten
                         zijn voor de editors 2 forms via een checkbox bv -->
                         <a href="#">
-                            <button class="btncta__btn">NAAR BESTELLEN</button>
+                            <button class="btncta__btn"><i class="fa fa-shopping-basket" aria-hidden="true"></i>NAAR BESTELLEN</button>
                         </a>
                     </div>
                 </div>
@@ -68,10 +75,11 @@
 <section class="section--quality section--50">
     <div class="container container--quality">
         <div class="row">
-            <div class="col-md-3 logo">
-                <img src="../logo.png">
+            <div class="col-md-3 sectionquality__img">
+                <img class="img-circle" src="../images/couple.jpg" height="250px" width="250px">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 sectionquality__info">
+                <!-- class paragraph in globals.scss -->
                 <div class="paragraph">
                     <p>’t Kalfshuys staat voor kwaliteit. Onze kalveren worden stuk voor stuk, met de grootste zorg en
                         op
@@ -181,6 +189,7 @@
 
 <footer class="footer">
     <div class="container footer--main">
+        <!-- vanaf hier tot einde row enkel voor de homepage -->
         <div class="row">
             <div class="col-md-4">
                 <!-- contact gegevens -->
@@ -191,11 +200,19 @@
                         </div>
                         <header>
                             <h5>BEL ONS</h5>
+                            <p>Vragen over een bestelling of andere info, aarzel niet en contacteer ons via onderstaande
+                             telefoon nummers.</p>
                         </header>
-                        <div class="mobilephone__each">
+                        <div class="mobilephone__mobile btnmobile__btn">
+                            <a href="tel:+32479792529"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</a>
+                        </div>
+                        <div class="mobilephone__desktop">
                             <i class="fa fa-mobile" aria-hidden="true"></i> +32479792529
                         </div>
-                        <div class="mobilephone__each">
+                        <div class="mobilephone__mobile btnmobile__btn">
+                            <a href="tel:+32489805656"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</a>
+                        </div>
+                        <div class="mobilephone__desktop">
                             <i class="fa fa-mobile" aria-hidden="true"></i> +32489805656
                         </div>
                     </div>
@@ -212,13 +229,18 @@
                     </div>
                     <header>
                         <h5>Contacteer ons</h5>
+                        <p>Mailen kan uiteraard ook, via e-mail of met ons contact formulier.</p>
                     </header>
                     <div class="email">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        <a href="mailto:steven.van.nijlen@telenet.be">Dit kan via e-mail</a>
+                        <a href="mailto:steven.van.nijlen@telenet.be">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            Dit kan via e-mail
+                        </a>
                     </div>
                     <div>
-                        Of via ons contactformulier
+                        <a href="#">
+                            <button class="btncontact__btn">Contactformulier</button>
+                        </a>
                     </div>
                 </div>
 
@@ -237,9 +259,10 @@
                         </blockquote>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </div><!-- einde row -->
+
+        <!-- deze footer op alle andere pagina's -->
         <div class="copyright">
             <!-- copyright -->
             <!-- TODO year omzetten naar php date -->
