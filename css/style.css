@@ -2829,6 +2829,10 @@ input[type=text], input[type=email] {
 
 .contactregion--form {
   color: #ffffff; }
+  .contactregion--form .contactregionform__info {
+    margin: 40px 0 20px; }
+  .contactregion--form .contactregionform__phone .form__phone {
+    margin-right: 10px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/

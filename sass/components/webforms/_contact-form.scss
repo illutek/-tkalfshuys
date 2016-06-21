@@ -8,4 +8,12 @@
 
 .contactregion--form {
   color: #ffffff;
+  .contactregionform__info {
+    margin: 40px 0 20px;
+  }
+  .contactregionform__phone {
+    .form__phone {
+      margin-right: 10px;
+    }
+  }
 }

@@ -43,5 +43,12 @@
 
 ?>
 <div class="contactregion--form">
-  <?php print t('Via telefoon kan ook natuurlijk:'); ?>
+  <div class="contactregionform__info">
+    <?php print t('Of toch liever langs de telefoon:') . '</br>'; ?>
+  </div>
+  <div class="contactregionform__phone">
+    <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</span>
+
+    <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</span>
+  </div>
 </div>
