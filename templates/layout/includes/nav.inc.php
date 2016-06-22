@@ -22,7 +22,9 @@
       </button>
       <!-- link aanpassen naar home page -->
       <div class="navbar--brand">
-        <a class="navbar-brand" href="#"><h4>'T KALFSHUYS</h4></a>
+        <a class="navbar-brand" href="<?php print $front_page; ?>">
+          <h4>'T KALFSHUYS</h4>
+        </a>
       </div>
     </div>
 
