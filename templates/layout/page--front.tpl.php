@@ -17,11 +17,13 @@ include 'includes/nav.inc.php';
 
 
 /**
- * TODO background section--homepage in div sectionhomepage__bcg
  * <!-- section homepage -->
+ * op section.scss onder class sectionhomepage__bcg kan de opactity van de background image aangepast om een donkere
+ * background image te verkrijgen doordat de background van de container section--homepage een zwarte achtergrond heeft
  */
 ?>
-<section class="section--homepage container-fluid">
+<section class="section--homepage">
+  <div class="sectionhomepage__bcg"></div>
   <div class="container homepage--container">
     <div class="homepage__logo--slogan">
       <div class="row">

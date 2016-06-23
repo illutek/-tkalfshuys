@@ -2675,14 +2675,25 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../images/runderen.jpg") no-repeat;
+  overflow: hidden;
   background-color: #000000;
-  background-size: cover; }
+  position: relative;
+  z-index: 2; }
   .section--homepage h1 {
     color: #ffffff; }
+  .section--homepage .sectionhomepage__bcg {
+    background: url("../images/runderen.jpg") no-repeat;
+    position: absolute;
+    height: 101%;
+    background-size: cover;
+    z-index: 1;
+    width: 100vw;
+    opacity: 0.9; }
 
-.homepage__logo--slogan .sectionhomepage__title__cta {
-  padding-top: 50px; }
+.homepage--container {
+  z-index: 2; }
+  .homepage--container .homepage__logo--slogan .sectionhomepage__title__cta {
+    padding-top: 50px; }
 
 .section--50 {
   min-height: 50vh;

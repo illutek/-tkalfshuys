@@ -8,20 +8,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../images/runderen.jpg") no-repeat;
+  overflow: hidden;
   background-color: #000000;
-  background-size: cover;
+  position: relative;
+  z-index: 2;
   h1 {
 
     color: #ffffff;
   }
-}
-
-.homepage__logo--slogan {
-  .sectionhomepage__title__cta {
-    padding-top: 50px;
+  .sectionhomepage__bcg {
+    background: url("../images/runderen.jpg") no-repeat;
+    position: absolute;
+    height: 101%;
+    background-size: cover;
+    z-index: 1;
+    width: 100vw;
+    opacity: 0.9;
   }
 }
+
+.homepage--container {
+  z-index: 2;
+  .homepage__logo--slogan {
+    .sectionhomepage__title__cta {
+      padding-top: 50px;
+    }
+  }
+}
+
 
 .section--50 {
   min-height: 50vh;
@@ -74,8 +88,8 @@
     height: 650px;
     background-color: $darkgrey;
     header {
-      position:absolute;
-      bottom:0;
+      position: absolute;
+      bottom: 0;
       h4 {
         margin: 20px 0;
       }
