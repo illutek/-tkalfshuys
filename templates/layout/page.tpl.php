@@ -17,7 +17,7 @@ include 'includes/nav.inc.php';
 <section class="section--page">
   <div class="container sectionpage__container">
     <div class="row">
-      <div class="layout-content <?php print $contentlayout; ?>">
+      <div class="layout--content <?php print $contentlayout; ?>">
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -31,13 +31,13 @@ include 'includes/nav.inc.php';
       </div>
 
       <?php if ($page['sidebar_first']): ?>
-        <aside class="layout-sidebar-first <?php print $sidebarfirst; ?>">
+        <aside class="layout--sidebar--first <?php print $sidebarfirst; ?>">
           <?php print render($page['sidebar_first']); ?>
         </aside>
       <?php endif; ?>
 
       <?php if ($page['sidebar_second']): ?>
-        <aside class="layout-sidebar-second <?php print $sidebarsecond; ?>">
+        <aside class="layout--sidebar--second <?php print $sidebarsecond; ?>">
           <?php print render($page['sidebar_second']); ?>
         </aside>
       <?php endif; ?>

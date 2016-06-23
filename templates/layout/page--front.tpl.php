@@ -15,9 +15,12 @@
 
 include 'includes/nav.inc.php';
 
-?>
 
-<!-- section homepage -->
+/**
+ * TODO background section--homepage in div sectionhomepage__bcg
+ * <!-- section homepage -->
+ */
+?>
 <section class="section--homepage container-fluid">
   <div class="container homepage--container">
     <div class="homepage__logo--slogan">
