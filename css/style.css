@@ -2676,11 +2676,12 @@ p {
   align-items: center;
   justify-content: center;
   background: url("../images/runderen.jpg") no-repeat;
+  background-color: #000000;
   background-size: cover; }
   .section--homepage h1 {
     color: #ffffff; }
 
-.sectionhomepage__title__cta {
+.homepage__logo--slogan .sectionhomepage__title__cta {
   padding-top: 50px; }
 
 .section--50 {
@@ -2735,6 +2736,7 @@ p {
 .section--page {
   background: #adadad;
   display: flex;
+  margin-top: 50px;
   min-height: 93vh;
   align-items: center;
   justify-content: center; }
@@ -2824,6 +2826,16 @@ input[type=text], input[type=email] {
   margin-top: 5px;
   margin-bottom: 5px; }
 
+fieldset.collapsible {
+  margin-top: 25px;
+  border: solid 1px #adadad;
+  padding: 20px; }
+  fieldset.collapsible .fieldset-legend a {
+    color: #ffffff; }
+    fieldset.collapsible .fieldset-legend a:hover {
+      color: #adadad;
+      text-decoration: none; }
+
 .form-textarea-wrapper {
   width: 100%; }
 
@@ -2834,6 +2846,8 @@ input[type=text], input[type=email] {
   .contactregion--form .contactregionform__phone .form__phone {
     margin-right: 10px; }
 
+@media only screen and (max-width: 479px) {
+  /* css code voor smartphones in portrait mode */ }
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/
@@ -2856,6 +2870,12 @@ input[type=text], input[type=email] {
 
   .corebusiness__region {
     margin: 10px 0; }
+
+  .section--page {
+    display: block;
+    margin-top: 75px; }
+    .section--page .layout--content {
+      margin-bottom: 25px; }
 
   h2 {
     font-size: 2.5em; }

@@ -67,4 +67,7 @@ function kalfshuys_preprocess_button(&$variables)
   if (stristr($variables['element']['#value'], 'Verzenden') !== FALSE) {
     $variables['element']['#attributes']['class'][] = 'btncontact__btn';
   }
+  if (stristr($variables['element']['#value'], 'Bestellen') !== FALSE) {
+    $variables['element']['#attributes']['class'][] = 'btncontact__btn';
+  }
 }

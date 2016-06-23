@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   background: url("../images/runderen.jpg") no-repeat;
+  background-color: #000000;
   background-size: cover;
   h1 {
 
@@ -16,8 +17,10 @@
   }
 }
 
-.sectionhomepage__title__cta {
- padding-top: 50px;
+.homepage__logo--slogan {
+  .sectionhomepage__title__cta {
+    padding-top: 50px;
+  }
 }
 
 .section--50 {
@@ -92,6 +95,7 @@
 .section--page {
   background: $grey;
   display: flex;
+  margin-top: 50px;
   min-height: 93vh;
   align-items: center;
   justify-content: center;
