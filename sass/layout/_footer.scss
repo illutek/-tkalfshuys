@@ -16,9 +16,18 @@
       header {
         margin-bottom: 15px;
       }
+      a {
+        color: #ffffff;
+      }
     }
     .contact--region {
       background: $red;
+      a {
+        &:hover {
+          text-decoration: none;
+          color: $pink;
+        }
+      }
     }
     .call-us--region {
       background: $pink;
@@ -27,13 +36,7 @@
       background: $blue-social;
     }
   }
-  a {
-    color: #ffffff;
-    &:hover {
-      text-decoration: none;
-      color: $pink;
-    }
-  }
+
   li {
     padding: 10px 0;
   }

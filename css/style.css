@@ -2769,17 +2769,17 @@ p {
       margin-bottom: 35px; }
     .footer .footer--main .footermain__item header {
       margin-bottom: 15px; }
+    .footer .footer--main .footermain__item a {
+      color: #ffffff; }
   .footer .footer--main .contact--region {
     background: #B70A10; }
+    .footer .footer--main .contact--region a:hover {
+      text-decoration: none;
+      color: #f6656a; }
   .footer .footer--main .call-us--region {
     background: #f6656a; }
   .footer .footer--main .social--region {
     background: #3a80f1; }
-  .footer a {
-    color: #ffffff; }
-    .footer a:hover {
-      text-decoration: none;
-      color: #f6656a; }
   .footer li {
     padding: 10px 0; }
   .footer .mobilephone__desktop {
@@ -2802,7 +2802,8 @@ p {
   color: #ffffff;
   border-radius: 0;
   font-family: "Fjalla One", sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
   .btncta__btn:hover, .btncontact__btn:hover, .btnmobile__btn:hover {
     color: #000000;
     background-color: #ffffff; }
@@ -2856,9 +2857,23 @@ fieldset.collapsible {
     margin: 40px 0 20px; }
   .contactregion--form .contactregionform__phone .form__phone {
     margin-right: 10px; }
+  .contactregion--form .mobilephone__mobile {
+    display: none; }
+  .contactregion--form .email {
+    margin: 25px 0; }
+  .contactregion--form a {
+    color: #ffffff; }
+    .contactregion--form a:hover {
+      text-decoration: none;
+      color: #adadad; }
 
 @media only screen and (max-width: 479px) {
-  /* css code voor smartphones in portrait mode */ }
+  /* css code voor smartphones in portrait mode */
+  .contactregionform__phone .form__phone {
+    display: none; }
+
+  .contactregion--form .mobilephone__mobile {
+    display: block; } }
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/
@@ -2906,10 +2921,10 @@ fieldset.collapsible {
   .footer .mobilephone__desktop {
     display: none; }
   .footer .mobilephone__mobile {
-    display: block; }
-  .footer .btnmobile__btn {
-    margin-top: 20px;
-    padding: 8px;
-    font-size: 1.2em; } }
+    display: block; } }
+.btnmobile__btn {
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */

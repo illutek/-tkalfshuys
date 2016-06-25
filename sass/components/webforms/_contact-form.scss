@@ -14,6 +14,20 @@
   .contactregionform__phone {
     .form__phone {
       margin-right: 10px;
+      //display: block;
+    }
+  }
+  .mobilephone__mobile {
+    display: none;
+  }
+  .email {
+    margin: 25px 0;
+  }
+  a {
+    color: #ffffff;
+    &:hover {
+      text-decoration: none;
+      color: $grey;
     }
   }
 }
@@ -21,6 +35,14 @@
 @media only screen and (max-width: 479px) {
 /* css code voor smartphones in portrait mode */
 
-
-
+  .contactregionform__phone {
+    .form__phone {
+      display: none;
+    }
+  }
+  .contactregion--form {
+    .mobilephone__mobile {
+      display: block;
+    }
+  }
 }

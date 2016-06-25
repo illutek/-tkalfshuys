@@ -22,39 +22,65 @@
  */
 ?>
 <?php
-  // Print out the progress bar at the top of the page
-  print drupal_render($form['progressbar']);
+// Print out the progress bar at the top of the page
+print drupal_render($form['progressbar']); ?>
 
-  // Print out the preview message if on the preview page.
-  if (isset($form['preview_message'])) {
-    print '<div class="messages warning">';
-    print drupal_render($form['preview_message']);
-    print '</div>';
-  }
-
-  // Print out the main part of the form.
-  // Feel free to break this up and move the pieces within the array.
-  print drupal_render($form['submitted']);
-
-
-  // Always print out the entire $form. This renders the remaining pieces of the
-  // form that haven't yet been rendered above (buttons, hidden elements, etc).
-  print drupal_render_children($form);
-
+<?php
+/**
+ * contact informatie had dit willen doen via een body field toegevoegd aan het inhoudstype webform
+ * maar toch maar via deze weg, door de meer mogelijkheden
+ */
 ?>
 <div class="contactregion--form">
   <div class="contactregionform__info">
     <?php
     /**
-     * TODO verdere opmaak, is me nu toch nog te simpel
+     * Telefoon nummer zijn op smartphone aanklikbaar evenals in de footer op de homepagina
+     * Dus is er een wijzigibg van nummers dienen de op 2 verschillende plaatsen aangepast
+     * niet geweldig dus
+     * TODO deze naar een include overbrengen
      */
-    print t('Of toch liever langs de telefoon:') . '</br>';
+    print '<h4>' .  t('CONTACT GEGEVENS') . '</h4>';
 
     ?>
   </div>
   <div class="contactregionform__phone">
     <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</span>
-
     <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</span>
   </div>
+  <div class="mobilephone__mobile btnmobile__btn">
+    <a href="tel:+32479792529"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</a>
+  </div>
+  <div class="mobilephone__mobile btnmobile__btn">
+    <a href="tel:+32489805656"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</a>
+  </div>
+  <div class="email">
+    <a href="mailto:steven.van.nijlen@telenet.be">
+      <script>
+        document.write("<a href=\"mail" + "to:" + new Array("steven.van.nijlen", "telenet.be").join("@") + "\">"
+        + "<i class=\"fa fa-envelope-o\" aria-hidden=\"true\"></i>" + " Dit kan via e-mail" + "</" + "a>");
+      </script>
+    </a>
+  </div>
+  <p>Of via onderstaand contactformulier.</p>
 </div>
+
+<?php
+// Print out the preview message if on the preview page.
+if (isset($form['preview_message'])) {
+  print '<div class="messages warning">';
+  print drupal_render($form['preview_message']);
+  print '</div>';
+}
+
+// Print out the main part of the form.
+// Feel free to break this up and move the pieces within the array.
+print drupal_render($form['submitted']);
+
+
+// Always print out the entire $form. This renders the remaining pieces of the
+// form that haven't yet been rendered above (buttons, hidden elements, etc).
+print drupal_render_children($form);
+
+?>
+
