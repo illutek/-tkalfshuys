@@ -26,9 +26,10 @@ include __DIR__ . '/../includes/nav.inc.php';
  * background image te verkrijgen doordat de background van de container section--homepage een zwarte achtergrond heeft
  */
 ?>
+<div id="parallax-anchor"></div>
 <section class="section--homepage">
-  <div class="sectionhomepage__bcg parallax__layer"></div>
-  <div class="container homepage--container parallax__layer">
+  <div class="sectionhomepage__bcg"></div>
+  <div class="container homepage--container">
     <div class="homepage__logo--slogan">
       <div class="row">
         <div class="col-md-3">
@@ -48,7 +49,8 @@ include __DIR__ . '/../includes/nav.inc.php';
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- end homepage__logo--slogan -->
+
   </div>
 </section>
 

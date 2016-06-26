@@ -12,6 +12,7 @@ scripts[]   =   js/jquery.min.js
 scripts[]   =   js/bootstrap.min.js
 scripts[]   =   js/facebook.js
 scripts[]   =   js/hamburger.js
+scripts[]   =   js/parallax.js
 
 ;REGIONS
 regions[content]    = Content

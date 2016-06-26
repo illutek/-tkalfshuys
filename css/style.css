@@ -2679,10 +2679,7 @@ p {
   overflow: hidden;
   background-color: #000000;
   position: relative;
-  z-index: 2;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px; }
+  z-index: 2; }
   .section--homepage .sectionhomepage__bcg {
     background: url("../images/runderen.jpg") no-repeat;
     position: absolute;
@@ -2690,21 +2687,15 @@ p {
     background-size: cover;
     z-index: 1;
     width: 100vw;
-    opacity: 0.9;
-    transform: translateZ(-1px); }
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+    opacity: 0.9; }
 
 .homepage--container {
-  z-index: 2;
-  transform: translateZ(0); }
+  z-index: 2; }
   .homepage--container .homepage__logo--slogan .sectionhomepage__title__cta {
     padding-top: 50px; }
+  .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
+    transition: all 0.4s ease-in-out;
+    font-size: 2.5em; }
 
 .section--50 {
   min-height: 50vh;
@@ -2816,7 +2807,8 @@ p {
   border-radius: 0;
   font-family: "Fjalla One", sans-serif;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.4s ease-in-out; }
   .btncta__btn:hover, .btncontact__btn:hover, .btnmobile__btn:hover {
     color: #000000;
     background-color: #ffffff; }
