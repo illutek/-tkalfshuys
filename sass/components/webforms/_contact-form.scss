@@ -8,15 +8,13 @@
 
 .contactregion--form {
   color: #ffffff;
+  background-color: $pink;
+  margin-top: 15px;
+  padding: 5px 35px 35px;
   .contactregionform__info {
     margin: 40px 0 20px;
   }
-  .contactregionform__phone {
-    .form__phone {
-      margin-right: 10px;
-      //display: block;
-    }
-  }
+
   .mobilephone__mobile {
     display: none;
   }
@@ -35,14 +33,13 @@
 @media only screen and (max-width: 479px) {
 /* css code voor smartphones in portrait mode */
 
-  .contactregionform__phone {
-    .form__phone {
-      display: none;
-    }
-  }
   .contactregion--form {
     .mobilephone__mobile {
       display: block;
     }
+    .mobilephone__desktop {
+      display: none;
+    }
   }
+
 }

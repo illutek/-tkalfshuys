@@ -37,22 +37,21 @@ print drupal_render($form['progressbar']); ?>
     /**
      * Telefoon nummer zijn op smartphone aanklikbaar evenals in de footer op de homepagina
      * Dus is er een wijzigibg van nummers dienen de op 2 verschillende plaatsen aangepast
-     * niet geweldig dus
-     * TODO deze naar een include overbrengen
+     * niet geweldig dus, opgelost met een include bestand 'includes/phone.inc.php'
      */
-    print '<h4>' .  t('CONTACT GEGEVENS') . '</h4>';
+    print '<h4>' . t('CONTACT GEGEVENS') . '</h4>';
 
     ?>
   </div>
   <div class="contactregionform__phone">
-    <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</span>
-    <span class="form__phone"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</span>
-  </div>
-  <div class="mobilephone__mobile btnmobile__btn">
-    <a href="tel:+32479792529"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</a>
-  </div>
-  <div class="mobilephone__mobile btnmobile__btn">
-    <a href="tel:+32489805656"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</a>
+
+    <?php
+    /**
+     * insluiten van de mobile telefoon nummers
+     */
+    include __DIR__ . '/../includes/phone.inc.php';
+    ?>
+
   </div>
   <div class="email">
     <a href="mailto:steven.van.nijlen@telenet.be">

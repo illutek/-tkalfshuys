@@ -2630,7 +2630,8 @@ h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif; }
 
 h1 {
-  font-size: 3.3em; }
+  font-size: 3.3em;
+  color: #ffffff; }
 
 h2 {
   font-size: 3em; }
@@ -2679,8 +2680,6 @@ p {
   background-color: #000000;
   position: relative;
   z-index: 2; }
-  .section--homepage h1 {
-    color: #ffffff; }
   .section--homepage .sectionhomepage__bcg {
     background: url("../images/runderen.jpg") no-repeat;
     position: absolute;
@@ -2754,7 +2753,7 @@ p {
   .section--page .sectionpage__container {
     background: #888888;
     overflow: auto;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px; }
 
 .footer {
@@ -2783,13 +2782,15 @@ p {
   .footer li {
     padding: 10px 0; }
   .footer .mobilephone__desktop {
-    display: block;
-    margin: 15px 0; }
+    display: block; }
   .footer .mobilephone__mobile {
     display: none; }
   .footer .copyright p {
     font-size: 12px;
     color: #adadad; }
+
+.mobilephone__desktop {
+  margin: 15px 0; }
 
 .btn--cta {
   margin-top: 15px;
@@ -2814,6 +2815,14 @@ p {
   margin-top: 20px;
   padding: 10px;
   font-size: 1.5em; }
+
+.footer--main .btnmobile__btn a:hover {
+  color: #f6656a;
+  text-decoration: none; }
+
+.contactregion--form .btnmobile__btn a:hover {
+  color: #f6656a;
+  text-decoration: none; }
 
 .navbar-inverse .navbar-toggle {
   border: none; }
@@ -2852,11 +2861,12 @@ fieldset.collapsible {
   width: 100%; }
 
 .contactregion--form {
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #f6656a;
+  margin-top: 15px;
+  padding: 5px 35px 35px; }
   .contactregion--form .contactregionform__info {
     margin: 40px 0 20px; }
-  .contactregion--form .contactregionform__phone .form__phone {
-    margin-right: 10px; }
   .contactregion--form .mobilephone__mobile {
     display: none; }
   .contactregion--form .email {
@@ -2869,11 +2879,10 @@ fieldset.collapsible {
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
-  .contactregionform__phone .form__phone {
-    display: none; }
-
   .contactregion--form .mobilephone__mobile {
-    display: block; } }
+    display: block; }
+  .contactregion--form .mobilephone__desktop {
+    display: none; } }
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/
@@ -2899,7 +2908,7 @@ fieldset.collapsible {
 
   .section--page {
     display: block;
-    margin-top: 75px; }
+    margin-top: 50px; }
     .section--page .layout--content {
       margin-bottom: 25px; }
 
@@ -2918,13 +2927,14 @@ fieldset.collapsible {
   .footermain__item {
     margin-bottom: 25px; }
 
-  .footer .mobilephone__desktop {
+  .footer--main .mobilephone__mobile {
+    display: block; }
+  .footer--main .mobilephone__desktop {
     display: none; }
-  .footer .mobilephone__mobile {
-    display: block; } }
-.btnmobile__btn {
-  margin-top: 20px;
-  padding: 8px;
-  font-size: 1.2em; }
+
+  .btnmobile__btn {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 1.2em; } }
 
 /*# sourceMappingURL=style.css.map */

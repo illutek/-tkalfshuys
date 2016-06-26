@@ -42,7 +42,6 @@
   }
   .mobilephone__desktop {
     display: block;
-    margin: 15px 0;
   }
   .mobilephone__mobile {
     display: none;
@@ -54,3 +53,7 @@
     }
   }
 }
+
+.mobilephone__desktop {
+   margin: 15px 0;
+ }

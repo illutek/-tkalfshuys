@@ -8,9 +8,14 @@
 
 /**
  * include van navigatie
+ * ../includes/nav.inc.php gaat niet lukken
+ * oplossing
+ * include dirname(__FILE__) . '/../includes/nav.inc.php'
+ * vanaf PHP 5.3 you can use __DIR__ in place of dirname(__FILE__)
  */
 
-include 'includes/nav.inc.php';
+include __DIR__ . '/../includes/nav.inc.php';
+
 
 ?>
 <div id="fb-root"></div>
@@ -50,7 +55,7 @@ include 'includes/nav.inc.php';
     /**
      * footer enkel met copyright vermelding
      */
-    include 'includes/footer_small.inc.php';
+    include __DIR__ . '/../includes/footer_small.inc.php';
     ?>
   </div>
 </footer>

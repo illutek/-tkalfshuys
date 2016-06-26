@@ -11,9 +11,13 @@
 <?php
 /**
  * include van navigatie
+ * ../includes/nav.inc.php gaat niet lukken
+ * oplossing
+ * include dirname(__FILE__) . '/../includes/nav.inc.php'
+ * vanaf PHP 5.3 you can use __DIR__ in place of dirname(__FILE__)
  */
 
-include 'includes/nav.inc.php';
+include __DIR__ . '/../includes/nav.inc.php';
 
 
 /**
@@ -28,7 +32,7 @@ include 'includes/nav.inc.php';
     <div class="homepage__logo--slogan">
       <div class="row">
         <div class="col-md-3">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
         </div>
         <div class="col-md-9 sectionhomepage__title__cta">
           <div class="col-md-12">
@@ -97,8 +101,10 @@ include 'includes/nav.inc.php';
        */
       print render($page['corebusiness3']);
       ?>
-    </div> <!-- end row -->
-  </div> <!-- end container--corebusiness -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container--corebusiness -->
 </section> <!-- end section--corebusiness -->
 
 <footer class="footer">
@@ -118,21 +124,17 @@ include 'includes/nav.inc.php';
               <p>Vragen over een bestelling of andere info, aarzel niet en contacteer ons via onderstaande
                 telefoon nummers.</p>
             </header>
-            <div class="mobilephone__mobile btnmobile__btn">
-              <a href="tel:+32479792529"><i class="fa fa-mobile" aria-hidden="true"></i> +32479792529</a>
-            </div>
-            <div class="mobilephone__desktop">
-              <i class="fa fa-mobile" aria-hidden="true"></i> +32479792529
-            </div>
-            <div class="mobilephone__mobile btnmobile__btn">
-              <a href="tel:+32489805656"><i class="fa fa-mobile" aria-hidden="true"></i> +32489805656</a>
-            </div>
-            <div class="mobilephone__desktop">
-              <i class="fa fa-mobile" aria-hidden="true"></i> +32489805656
-            </div>
-          </div>
 
-        </div>
+            <?php
+            /**
+             * insluiten van de mobile telefoon nummers
+             */
+            include __DIR__ . '/../includes/phone.inc.php';
+            ?>
+
+          </div> <!-- end mobile--phone -->
+
+        </div> <!-- end footermain__item call-us--region -->
 
       </div>
       <!-- end contact--region -->

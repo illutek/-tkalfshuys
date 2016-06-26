@@ -33,3 +33,32 @@
 .btnmobile__btn {
   @extend .btncta__btn;
 }
+
+// hover state van de buttons in de footer
+// de hover state van die zelfde button op de contact pagina krijgt deze van _contact-form.scss
+// alle a tag op deze form
+
+// bovenstaande comment toch even niet omdat we de div contactregion--form een pink bcg hebben gegeven
+// was grijs
+
+.footer--main {
+  .btnmobile__btn {
+    a {
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.contactregion--form {
+  .btnmobile__btn {
+    a {
+      &:hover {
+        color: $pink;
+        text-decoration: none;
+      }
+    }
+  }
+}
