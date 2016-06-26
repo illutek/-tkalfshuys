@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">HOME</a>
-        <li><a href="#">BESTELLEN</a></li>
+        <?php print '<li>' . '<a href=' . base_path() . 'bestellen>' . t('BESTELLEN') . '</a></li>'; ?>
         <?php print '<li>' . '<a href=' . base_path() . 'tKalfshuys-contacteren>' .  t('CONTACT') . '</a></li>'; ?>
 
       </ul>

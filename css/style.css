@@ -2798,6 +2798,24 @@ p {
 .mobilephone__desktop {
   margin: 15px 0; }
 
+.layoutcontent__bestellen {
+  background: #ffffff;
+  padding: 25px 15px; }
+  .layoutcontent__bestellen h1 {
+    color: #000000; }
+  .layoutcontent__bestellen table {
+    margin-top: 25px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; }
+    .layoutcontent__bestellen table td {
+      padding: 7px 5px;
+      border: 1px solid black; }
+    .layoutcontent__bestellen table th {
+      padding: 10px 5px;
+      border: 1px solid black;
+      font-weight: bold; }
+
 .btncta__btn, .btncontact__btn, .btnmobile__btn {
   padding: 10px 10px 0px 10px;
   background-color: transparent;

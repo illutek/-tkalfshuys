@@ -1,0 +1,29 @@
+//================================
+// @@ ++ Pagina bestellen
+//================================
+
+.layoutcontent__bestellen {
+  background: #ffffff;
+  padding: 25px 15px;
+  h1 {
+    color: #000000;
+  }
+  table {
+    margin-top: 25px;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    thead {
+
+    }
+    td {
+      padding: 7px 5px;
+      border: 1px solid black;
+    }
+    th {
+      padding: 10px 5px;
+      border: 1px solid black;
+      font-weight: bold;
+    }
+  }
+}

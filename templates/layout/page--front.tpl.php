@@ -40,14 +40,15 @@ include __DIR__ . '/../includes/nav.inc.php';
           <div class="col-md-12">
             <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
           </div>
+
+
           <div class="col-md-12 btn--cta">
             <!-- de link naar bestel form zou gemakkelijk aanpasbaar moeten
             zijn voor de editors 2 forms via een checkbox bv -->
-            <a href="#">
-              <button class="btncta__btn"><i class="fa fa-shopping-basket" aria-hidden="true"></i>NAAR BESTELLEN
-              </button>
-            </a>
+            <?php include __DIR__ . '/../includes/button-cta.inc.php'; ?>
           </div>
+
+
         </div>
       </div>
     </div><!-- end homepage__logo--slogan -->

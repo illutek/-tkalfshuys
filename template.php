@@ -29,6 +29,14 @@ function kalfshuys_preprocess_page(&$variables)
 {
   $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/images/';
 
+  drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/jquery.min.js', array('weight' => 1));
+
+  /**
+   * parallax.js only on the front page
+   */
+  if (drupal_is_front_page()) {
+    drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/parallax.js', array('weight' => 5));
+  }
 
   /**
    * als er in beide sidebars content is
