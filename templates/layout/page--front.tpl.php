@@ -27,8 +27,8 @@ include __DIR__ . '/../includes/nav.inc.php';
  */
 ?>
 <section class="section--homepage">
-  <div class="sectionhomepage__bcg"></div>
-  <div class="container homepage--container">
+  <div class="sectionhomepage__bcg parallax__layer"></div>
+  <div class="container homepage--container parallax__layer">
     <div class="homepage__logo--slogan">
       <div class="row">
         <div class="col-md-3">
