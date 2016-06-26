@@ -31,8 +31,10 @@
     }
     .btn--cta {
       .btncta__btn {
+        margin-top: 15px;
         &.parallax__effect {
-          transition: all 0.4s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          margin-top: 75px;
           font-size: 2.5em;
         }
       }

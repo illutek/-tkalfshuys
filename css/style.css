@@ -2693,9 +2693,12 @@ p {
   z-index: 2; }
   .homepage--container .homepage__logo--slogan .sectionhomepage__title__cta {
     padding-top: 50px; }
-  .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
-    transition: all 0.4s ease-in-out;
-    font-size: 2.5em; }
+  .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn, .homepage--container .homepage__logo--slogan .btn--cta .btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .btnmobile__btn {
+    margin-top: 15px; }
+    .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
+      transition: all 0.5s ease-in-out;
+      margin-top: 75px;
+      font-size: 2.5em; }
 
 .section--50 {
   min-height: 50vh;
@@ -2794,10 +2797,6 @@ p {
 
 .mobilephone__desktop {
   margin: 15px 0; }
-
-.btn--cta {
-  margin-top: 15px;
-  display: inline-block; }
 
 .btncta__btn, .btncontact__btn, .btnmobile__btn {
   padding: 10px 10px 0px 10px;
@@ -2900,6 +2899,13 @@ fieldset.collapsible {
   /* css code voor smartphones in landscape mode */ }
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
+  .homepage--container {
+    z-index: 2; }
+    .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
+      transition: all 0.4s ease-in-out;
+      margin-top: 55px;
+      font-size: 1.6em; }
+
   .section--quality {
     padding: 15px 0; }
     .section--quality .paragraph {

@@ -27,6 +27,7 @@ include __DIR__ . '/../includes/nav.inc.php';
  */
 ?>
 <div id="parallax-anchor"></div>
+
 <section class="section--homepage">
   <div class="sectionhomepage__bcg"></div>
   <div class="container homepage--container">
@@ -190,7 +191,7 @@ include __DIR__ . '/../includes/nav.inc.php';
     /**
      * footer enkel met copyright vermelding
      */
-    include 'includes/footer_small.inc.php';
+    include __DIR__ . '/../includes/footer_small.inc.php';
     ?>
   </div>
 </footer>

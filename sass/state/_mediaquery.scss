@@ -23,6 +23,22 @@
 
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
+
+  .homepage--container {
+    z-index: 2;
+    .homepage__logo--slogan {
+      .btn--cta {
+        .btncta__btn {
+          &.parallax__effect {
+            transition: all 0.4s ease-in-out;
+            margin-top: 55px;
+            font-size: 1.6em;
+          }
+        }
+      }
+    }
+  }
+
   .section--quality {
     padding: 15px 0;
     .paragraph {
