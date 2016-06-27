@@ -2904,6 +2904,20 @@ fieldset.collapsible {
     display: block; }
   .contactregion--form .mobilephone__desktop {
     display: none; } }
+.werkwijze--node__wrap {
+  margin-top: 35px; }
+  .werkwijze--node__wrap h3 {
+    margin-bottom: 10px; }
+
+.werkwijze--teaser__wrap {
+  background: #f6656a;
+  padding: 15px;
+  color: #ffffff; }
+  .werkwijze--teaser__wrap h3 {
+    margin-bottom: 10px; }
+  .werkwijze--teaser__wrap .werkwijze--teaser__btn {
+    text-align: center; }
+
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/

@@ -1,0 +1,26 @@
+//================================
+// @@ ++ Werkwijze
+//================================
+// De volledige node
+.werkwijze--node__wrap {
+  margin-top: 35px;
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+
+// De teaser
+
+.werkwijze--teaser__wrap {
+  background: $pink;
+  padding: 15px;
+  color: #ffffff;
+  h3 {
+    margin-bottom: 10px;
+  }
+  .werkwijze--teaser__btn {
+    text-align: center;
+  }
+}
+

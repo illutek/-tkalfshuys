@@ -15,8 +15,6 @@
  */
 
 include __DIR__ . '/../includes/nav.inc.php';
-
-
 ?>
 <div id="fb-root"></div>
 <section class="section--page">
