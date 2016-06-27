@@ -2658,6 +2658,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px; }
+  body.not-front {
+    background: #adadad; }
 
 p {
   font-size: 16px;
@@ -2750,12 +2752,8 @@ p {
       overflow: hidden; }
 
 .section--page {
-  background: #adadad;
-  display: flex;
-  margin-top: 50px;
-  min-height: 93vh;
-  align-items: center;
-  justify-content: center; }
+  margin-top: 70px;
+  min-height: 93vh; }
   .section--page .sectionpage__container {
     background: #888888;
     overflow: auto;
@@ -2815,6 +2813,9 @@ p {
       padding: 10px 5px;
       border: 1px solid black;
       font-weight: bold; }
+
+.page--tpl__logo {
+  margin-bottom: 20px; }
 
 .btncta__btn, .btncontact__btn, .btnmobile__btn {
   padding: 10px 10px 0px 10px;

@@ -27,7 +27,6 @@ function kalfshuys_preprocess_html(&$vars)
  */
 function kalfshuys_preprocess_page(&$variables)
 {
-  $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/images/';
 
   drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/jquery.min.js', array('weight' => 1));
 

@@ -15,14 +15,24 @@
  */
 
 include __DIR__ . '/../includes/nav.inc.php';
-
-
 ?>
 <div id="fb-root"></div>
 <section class="section--page">
+
+  <div class="container page--tpl__logo">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png"/>
+      </div>
+      <div class="col-md-9">
+        <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
+      </div>
+    </div>
+  </div>
+
   <div class="container sectionpage__container">
     <div class="row">
-      <div class="layout--content col-md-8 col-md-push-4">
+      <div class="layout--content <?php print $contentlayout; ?>">
         <div class="layoutcontent__bestellen">
           <a id="main-content"></a>
           <?php print render($title_prefix); ?>
@@ -35,12 +45,20 @@ include __DIR__ . '/../includes/nav.inc.php';
             <ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
           <?php print render($page['content']); ?>
         </div>
+
       </div>
 
-      <aside class="layout--sidebar--first col-md-4 col-md-pull-8">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>
+      <?php if ($page['sidebar_first']): ?>
+        <aside class="layout--sidebar--first <?php print $sidebarfirst; ?>">
+          <?php print render($page['sidebar_first']); ?>
+        </aside>
+      <?php endif; ?>
 
+      <?php if ($page['sidebar_second']): ?>
+        <aside class="layout--sidebar--second <?php print $sidebarsecond; ?>">
+          <?php print render($page['sidebar_second']); ?>
+        </aside>
+      <?php endif; ?>
     </div>
 </section>
 

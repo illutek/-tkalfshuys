@@ -18,6 +18,18 @@ include __DIR__ . '/../includes/nav.inc.php';
 ?>
 <div id="fb-root"></div>
 <section class="section--page">
+
+  <div class="container page--tpl__logo">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png"/>
+      </div>
+      <div class="col-md-9">
+        <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
+      </div>
+    </div>
+  </div>
+
   <div class="container sectionpage__container">
     <div class="row">
       <div class="layout--content <?php print $contentlayout; ?>">

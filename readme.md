@@ -14,6 +14,7 @@ vanaf PHP 5.3 you can use __DIR__ in place of dirname(__FILE__)
 
 
 page--node--11.tpl.php = pagina bestellen zie dit als een tussen schakel naar het plaatsen van een bestelling.
+verschilt enkel van de page.tpl.php om de main content een witte background te kunnen geven 
 
 
 Fout op page.tpl.php en andere door id="parallax-anchor" dat enkel op de front-page wordt gebruikt, daarom de jquery.min.js

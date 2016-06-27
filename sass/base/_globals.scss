@@ -19,7 +19,12 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  &.not-front {
+    background: $grey;
+  }
 }
+
+
 
 p {
   font-size: 16px;
