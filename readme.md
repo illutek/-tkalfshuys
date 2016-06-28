@@ -19,3 +19,13 @@ verschilt enkel van de page.tpl.php om de main content een witte background te k
 
 Fout op page.tpl.php en andere door id="parallax-anchor" dat enkel op de front-page wordt gebruikt, daarom de jquery.min.js
 en parallax.js oproep verhuisd van het .info bestand naar template.php
+
+###Bestel
+Om een link te leggen op een button(btn 'Bestelformulier') naar een upload pdf, dit alles in een node--.tpl.php file, 
+dient de markup rond dat veld verwijdert, volgende zou dan niet lukken
+´´´
+print '<a href="' . render($content['field_pdf_bereidingen']) . '">' . '<button class="btncontact__btn">'..........
+´´´
+Dit omdat out off the box Drupal een div rond een field plaatst, met de module no_field_markup 
+https://www.drupal.org/project/no_field_markup lossen we dit probleem op.
+(node--werkwijze.tpl.php)

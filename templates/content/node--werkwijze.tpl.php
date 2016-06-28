@@ -12,30 +12,34 @@
  */
 if ($teaser): ?>
   <div class="werkwijze--teaser__wrap">
-    <?php print '<h3>' . render($content['field_titel_pdf_blok']) . '</h3>' . render($content['field_info_pdf']); ?>
+  <?php print '<h3>' . render($content['field_titel_pdf_blok']) . '</h3>' . render($content['field_info_pdf']); ?>
 
-    <?php // print_r($field_wat_verkocht) ?>
-    <div class="werkwijze--teaser__btn">
-      <?php
-      print '<a href="#">' . '<button class="btncontact__btn">' . t('Bestelformulier Huisbereidingen') . '</button></a>';
+  <?php // print_r($field_wat_verkocht) ?>
+  <div class="werkwijze--teaser__btn">
+  <?php
+  /**
+   * De variabele $pdfBereidingen, $pdfKalfsvlees en $pdfRundsvlees van template.php
+   */
+  print '<a href="' . $pdfBereidingen . '"' . 'target="_blank">' . '<button class="btncontact__btn">' . t('Bestelformulier Huisbereidingen') . '</button></a>';
 
-      if ($field_wat_verkocht["und"][0]["value"] === "kalfs"):
-        print '<a href="#">' . '<button class="btncontact__btn">' . t('Bestelformulier Kalfs') . '</button></a>';
+
+  if ($field_wat_verkocht["und"][0]["value"] === "kalfs"):
+    print '<a href="' . $pdfKalfsvlees . '"' . 'target="_blank">' . '<button class="btncontact__btn">' . t('Bestelformulier Kalfs') . '</button></a>';
       else:
-        print '<a href="#">' . '<button class="btncontact__btn">' . t('Bestelformulier Runds') . '</button></a>';
+        print '<a href="' . $pdfRundsvlees . '"' . 'target="_blank">' . '<button class="btncontact__btn">' . t('Bestelformulier Runds') . '</button></a>';
       endif;
-      ?>
-    </div>
+?>
+  </div>
   </div>
 <?php
 /**
  * hier de volledige node
  */
 else: ?>
-  <div class="werkwijze--node__wrap">
-    <h3><?php print render($content['field_titel_bestellen']); ?></h3>
-    <?php print render($content['field_info_bestellen']); ?>
+<div class="werkwijze--node__wrap">
+  <h3><?php print render($content['field_titel_bestellen']); ?></h3>
+  <?php print render($content['field_info_bestellen']); ?>
 
     <?php print '<p>' .  t('Hier de link naar de producten of iets dergelijks') . '</p>'; ?>
-  </div>
+</div>
 <?php endif; ?>

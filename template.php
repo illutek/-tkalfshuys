@@ -9,7 +9,7 @@
 /**
  * Implements hook_preprocess_html()
  */
-function kalfshuys_preprocess_html(&$vars)
+function kalfshuys_preprocess_html(&$variables)
 {
   // Viewport!
   $viewport = array(
@@ -22,6 +22,17 @@ function kalfshuys_preprocess_html(&$vars)
   drupal_add_html_head($viewport, 'viewport');
 }
 
+/**
+ * Implements hook_preprocess_node()
+ */
+function kalfshuys_preprocess_node(&$variables)
+{
+
+  $variables['pdfBereidingen'] = drupal_render($variables['content']['field_pdf_bereidingen']);
+  $variables['pdfKalfsvlees'] = drupal_render($variables['content']['field_pdf_kalfsvlees']);
+  $variables['pdfRundsvlees'] = drupal_render($variables['content']['field_pdf_rundsvlees']);
+
+}
 /**
  * @param $variables
  */
