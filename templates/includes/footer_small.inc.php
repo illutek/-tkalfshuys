@@ -8,6 +8,5 @@
 
 <div class="copyright">
   <!-- copyright -->
-  <!-- TODO year omzetten naar php date -->
   <p>'t Kalfshuys © <?php echo date("Y"); ?></p>
 </div>

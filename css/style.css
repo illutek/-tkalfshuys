@@ -2673,6 +2673,36 @@ p {
 #toolbar {
   margin-top: 50px; }
 
+.maintenance-page {
+  background: url("../images/runderen.jpg") no-repeat;
+  position: absolute;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+  width: 100vw; }
+  .maintenance-page #header {
+    margin-top: 50px; }
+    .maintenance-page #header #logo {
+      float: left; }
+    .maintenance-page #header #site-name {
+      color: #000000; }
+      .maintenance-page #header #site-name span {
+        padding-left: 35px; }
+      .maintenance-page #header #site-name a:hover {
+        text-decoration: none; }
+    .maintenance-page #header h2 {
+      margin-top: 25px; }
+      .maintenance-page #header h2 span {
+        padding-left: 35px; }
+  .maintenance-page #content {
+    padding: 35px;
+    margin-top: 35px;
+    color: #000;
+    background: #ffffff; }
+    .maintenance-page #content h1 {
+      color: #000000;
+      margin-bottom: 15px; }
+
 .section--homepage {
   height: 100vh;
   display: flex;
@@ -2693,14 +2723,15 @@ p {
 
 .homepage--container {
   z-index: 2; }
-  .homepage--container .homepage__logo--slogan .sectionhomepage__title__cta {
-    padding-top: 50px; }
   .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn, .homepage--container .homepage__logo--slogan .btn--cta .btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .btnmobile__btn {
     margin-top: 15px; }
     .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
       transition: all 0.5s ease-in-out;
       margin-top: 75px;
       font-size: 2.5em; }
+
+.sectionhomepage__title__cta {
+  padding-top: 50px; }
 
 .section--50 {
   min-height: 50vh;
