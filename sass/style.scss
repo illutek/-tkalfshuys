@@ -38,10 +38,16 @@
 //========================
 @import "components/buttons";
 @import "components/navbar";
+
 @import "components/webforms/forms-global";
 @import "components/webforms/contact-form";
 @import "components/webforms/kalfsvlees";
+
 @import "components/node/node-werkwijze";
+@import "components/node/node-product";
+
+@import "components/uc/cart";
+@import "components/uc/producten-table";
 
 //=======================
 // @@ ++ State

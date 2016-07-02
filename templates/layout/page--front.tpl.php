@@ -188,12 +188,14 @@ include __DIR__ . '/../includes/nav.inc.php';
     </div>
     <!-- einde row -->
 
-    <?php
-    /**
-     * footer enkel met copyright vermelding
-     */
-    include __DIR__ . '/../includes/footer_small.inc.php';
-    ?>
   </div>
 </footer>
 
+<footer>
+  <?php
+  /**
+   * footer enkel met copyright vermelding
+   */
+  include __DIR__ . '/../includes/footer_small.inc.php';
+  ?>
+</footer>

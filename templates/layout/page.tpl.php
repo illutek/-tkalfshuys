@@ -56,13 +56,12 @@ include __DIR__ . '/../includes/nav.inc.php';
     </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <?php
-    /**
-     * footer enkel met copyright vermelding
-     */
-    include __DIR__ . '/../includes/footer_small.inc.php';
-    ?>
-  </div>
+<footer class="navbar-fixed-bottom">
+  <?php
+  /**
+   * footer enkel met copyright vermelding
+   */
+  include __DIR__ . '/../includes/footer_small.inc.php';
+  ?>
 </footer>
+

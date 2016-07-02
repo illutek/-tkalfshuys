@@ -1,0 +1,29 @@
+//================================
+// @@ ++ Cart
+//================================
+
+// Cart
+
+#uc-cart-view-form {
+  table {
+    margin-top: 25px;
+    width: 98%;
+    td {
+      padding: 15px;
+      text-align: left;
+    }
+  }
+  .form-actions {
+    margin-top: 10px;
+  }
+}
+
+.price, .subtotal, th {
+  display: none;
+}
+
+.form-type-uc-quantity {
+  input[type=text] {
+    padding: 5px;
+  }
+}

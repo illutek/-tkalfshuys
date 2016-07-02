@@ -40,7 +40,6 @@
               '<ul class="dropdown-menu">' .
               '<li><a href="' . url('user/' . $user->uid) . '">' . '<i class="fa fa-user fa-fw"></i>' . t(' Mijn account') . '</a></li>' .
               '<li><a href="' . url('user/' . $user->uid . '/edit') . '">' . '<i class="fa fa-pencil fa-fw"></i>' . t(' Bewerken') . '</a></li>' .
-              '<li><a href="' . url('user/' . $user->uid . '/addresses') . '">' . '<i class="fa fa-truck fa-fw"></i>' . t(' Mijn adres') . '</a>' . '</li>' .
               '<li><a href="' . url('user/' . $user->uid . '/orders') . '">' . '<i class="fa fa-book fa-fw"></i>' . t(' Mijn orders') . '</a></li>' .
               '<li><a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-fw"></i>' . t(' Uitloggen') . '</a></li>' .
               '</ul>' .

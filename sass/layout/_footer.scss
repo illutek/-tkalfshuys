@@ -1,8 +1,12 @@
 //================================
 // @@ ++ Footer
 //================================
-.footer {
+
+footer {
   background-color: #000000;
+}
+
+.footer {
   color: #ffffff;
   padding: 35px 0;
   .footer--main {
@@ -46,12 +50,14 @@
   .mobilephone__mobile {
     display: none;
   }
-  .copyright {
-    p {
-      font-size: 12px;
-      color: $grey;
-    }
-  }
+
+}
+
+
+.copyright {
+    font-size: 12px;
+    color: $grey;
+    padding: 20px 0;
 }
 
 .mobilephone__desktop {

@@ -2634,7 +2634,8 @@ h1 {
   color: #ffffff; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  margin-bottom: 25px; }
 
 h3 {
   font-size: 2.5em; }
@@ -2783,16 +2784,17 @@ p {
       overflow: hidden; }
 
 .section--page {
-  margin-top: 70px;
-  min-height: 93vh; }
+  margin-top: 70px; }
   .section--page .sectionpage__container {
     background: #888888;
     overflow: auto;
     padding-top: 30px;
     padding-bottom: 20px; }
 
+footer {
+  background-color: #000000; }
+
 .footer {
-  background-color: #000000;
   color: #ffffff;
   padding: 35px 0; }
   .footer .footer--main .footermain__item {
@@ -2820,9 +2822,11 @@ p {
     display: block; }
   .footer .mobilephone__mobile {
     display: none; }
-  .footer .copyright p {
-    font-size: 12px;
-    color: #adadad; }
+
+.copyright {
+  font-size: 12px;
+  color: #adadad;
+  padding: 20px 0; }
 
 .mobilephone__desktop {
   margin: 15px 0; }
@@ -2848,15 +2852,17 @@ p {
 .page--tpl__logo {
   margin-bottom: 20px; }
 
-.btncta__btn, .btncontact__btn, .btnmobile__btn {
+.btn-default, .btncontact__btn, .btnmobile__btn {
   padding: 10px 10px 0px 10px;
-  background-color: transparent;
-  border: solid 1px #ffffff;
-  color: #ffffff;
   border-radius: 0;
   font-family: "Fjalla One", sans-serif;
   font-size: 2em;
-  text-align: center;
+  text-align: center; }
+
+.btncta__btn, .btncontact__btn, .btnmobile__btn {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
   transition: all 0.4s ease-in-out; }
   .btncta__btn:hover, .btncontact__btn:hover, .btnmobile__btn:hover {
     color: #000000;
@@ -2866,8 +2872,13 @@ p {
 
 .btncontact__btn {
   margin-top: 20px;
+  font-size: 1.5em;
+  padding: 10px; }
+
+.btnbestellen__btn {
+  border: solid 1px #000000;
   padding: 10px;
-  font-size: 1.5em; }
+  margin: 10px; }
 
 .footer--main .btnmobile__btn a:hover {
   color: #f6656a;
@@ -2892,8 +2903,7 @@ p {
   padding: 5px; }
 .webform-component-textarea .grippie {
   display: none; }
-
-input[type=text], input[type=email] {
+.webform-component-textarea input[type=text], .webform-component-textarea input[type=email] {
   width: 100%;
   padding: 5px;
   border: none;
@@ -2930,6 +2940,13 @@ fieldset.collapsible {
       text-decoration: none;
       color: #adadad; }
 
+.webform-client-form-8 input[type=text], .webform-client-form-8 input[type=email] {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
   .contactregion--form .mobilephone__mobile {
@@ -2949,6 +2966,49 @@ fieldset.collapsible {
     margin-bottom: 10px; }
   .werkwijze--teaser__wrap .werkwijze--teaser__btn {
     text-align: center; }
+
+.product_list {
+  margin-top: 25px; }
+  .product_list .product_info__body {
+    background: #ffffff;
+    padding: 25px;
+    margin: 0 0 15px 0; }
+
+.body_teaser {
+  padding: 10px;
+  width: 205px;
+  float: left;
+  border: solid 1px #000000;
+  overflow: auto;
+  margin: 5px 5px 0 0; }
+  .body_teaser .teaser_prod_img {
+    text-align: center;
+    margin-bottom: 10px; }
+
+#uc-cart-view-form table {
+  margin-top: 25px;
+  width: 98%; }
+  #uc-cart-view-form table td {
+    padding: 15px;
+    text-align: left; }
+#uc-cart-view-form .form-actions {
+  margin-top: 10px; }
+
+.price, .subtotal, th {
+  display: none; }
+
+.form-type-uc-quantity input[type=text], .form-type-uc-quantity input[type=email] {
+  padding: 5px; }
+
+.view-id-producten {
+  margin-top: 25px; }
+  .view-id-producten .btnbestellen__btn {
+    font-size: 1.5em; }
+  .view-id-producten table {
+    width: 99%; }
+    .view-id-producten table td {
+      height: 100px;
+      vertical-align: middle; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/

@@ -1,0 +1,19 @@
+//===========================================================================================================
+// @@ ++ Producten tabel
+// Zou voor deze optie gaan, omdat het tonen van de producten in een grid (teaser node--producten.tpl.php)
+// niet onmiddelijk geweldig vlees en mooie foto's
+//===========================================================================================================
+
+.view-id-producten {
+  margin-top: 25px;
+  .btnbestellen__btn {
+    font-size: 1.5em;
+  }
+  table {
+    width: 99%;
+    td {
+      height: 100px;
+      vertical-align: middle;
+    }
+  }
+}

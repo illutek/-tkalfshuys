@@ -2,15 +2,18 @@
 // @@ ++ Buttons
 //================================
 
-.btncta__btn {
+.btn-default {
   padding: 10px 10px 0px 10px;
-  background-color: transparent;
-  border: solid 1px #ffffff;
-  color: #ffffff;
   border-radius: 0;
   font-family: "Fjalla One", sans-serif;
   font-size: 2em;
   text-align: center;
+}
+ // op section 1 page--front.tpl.php
+.btncta__btn {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
   transition: all 0.4s ease-in-out;
   &:hover {
     color: #000000;
@@ -23,12 +26,20 @@
 
 .btncontact__btn {
   margin-top: 20px;
+  @extend .btn-default;
+  font-size: 1.5em;
   @extend .btncta__btn;
   padding: 10px;
-  font-size: 1.5em;
+}
+
+.btnbestellen__btn {
+  border: solid 1px #000000;
+  padding: 10px;
+  margin: 10px;
 }
 
 .btnmobile__btn {
+  @extend .btn-default;
   @extend .btncta__btn;
 }
 

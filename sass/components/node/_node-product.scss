@@ -1,0 +1,29 @@
+//================================
+// @@ ++ Node Product
+//================================
+// full node
+.product_list {
+  margin-top: 25px;
+  .product_info__body {
+    background: #ffffff;
+    padding: 25px;
+    margin: 0 0 15px 0;
+  }
+}
+
+// teaser
+// TODO gaan we voorlopig niet gebruiken mag verwijdert worden
+
+.body_teaser {
+  padding: 10px;
+  width: 205px;
+  float: left;
+  border: solid 1px #000000;
+  overflow: auto;
+  margin: 5px 5px 0 0;
+  .teaser_prod_img {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+

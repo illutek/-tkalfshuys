@@ -32,6 +32,15 @@ function kalfshuys_preprocess_node(&$variables)
   $variables['pdfKalfsvlees'] = drupal_render($variables['content']['field_pdf_kalfsvlees']);
   $variables['pdfRundsvlees'] = drupal_render($variables['content']['field_pdf_rundsvlees']);
 
+  if (module_exists('uc_product') && uc_product_is_product($variables)){
+    $variables['uc_image_teaser'] = drupal_render($variables['content']['uc_product_image'][0]);
+    $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
+    $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
+    $variables['uc_body'] = drupal_render($variables['content']['body']);
+
+    $variables['uc_addCart'] = drupal_render($variables['content']['add_to_cart']);
+  }
+
 }
 /**
  * @param $variables
@@ -48,7 +57,12 @@ function kalfshuys_preprocess_page(&$variables)
     drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/parallax.js', array('weight' => 5));
   }
 
+  // Add a copyright message to the footer_small.inc.php
+
+  $variables['copyright'] = t('\'t Kalfshuys') . ' © ' . date("Y");
+
   /**
+   * Het afhankelijk van ja of geen content in de sidebars de main content breedte aanpassen
    * als er in beide sidebars content is
    */
   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
@@ -85,7 +99,7 @@ function kalfshuys_preprocess_button(&$variables)
   if (stristr($variables['element']['#value'], 'Verzenden') !== FALSE) {
     $variables['element']['#attributes']['class'][] = 'btncontact__btn';
   }
-  if (stristr($variables['element']['#value'], 'Bestellen') !== FALSE) {
-    $variables['element']['#attributes']['class'][] = 'btncontact__btn';
+  if (stristr($variables['element']['#value'], '_Toevoegen aan bestelling') !== FALSE) {
+    $variables['element']['#attributes']['class'][] = 'btn-default btnbestellen__btn';
   }
 }

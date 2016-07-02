@@ -6,7 +6,8 @@
  * Time: 16:12
  */?>
 
-<div class="copyright">
-  <!-- copyright -->
-  <p>'t Kalfshuys © <?php echo date("Y"); ?></p>
-</div>
+  <div class="container copyright">
+    <!-- copyright -->
+    <?php print $copyright; ?>
+  </div>
+
