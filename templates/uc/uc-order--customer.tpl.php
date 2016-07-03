@@ -87,7 +87,7 @@
                         <table cellpadding="4" cellspacing="0" border="0" width="100%"
                                style="font-family: verdana, arial, helvetica; font-size: small;">
                             <tr>
-                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
+                                <td colspan="2" bgcolor="#B70A10" style="color: white;">
                                     <b><?php print t('Purchasing Information:'); ?></b>
                                 </td>
                             </tr>
@@ -108,50 +108,22 @@
                                                 <b><?php print t('Billing Address:'); ?></b><br/>
                                                 <?php print $order_billing_address; ?><br/>
                                                 <br/>
-                                                <b><?php print t('Billing Phone:'); ?></b><br/>
-                                                <?php print $order_billing_phone; ?><br/>
                                             </td>
                                             <?php if ($shippable): ?>
                                                 <td valign="top" width="50%">
                                                     <b><?php print t('Shipping Address:'); ?></b><br/>
                                                     <?php print $order_shipping_address; ?><br/>
                                                     <br/>
-                                                    <b><?php print t('Shipping Phone:'); ?></b><br/>
-                                                    <?php print $order_shipping_phone; ?><br/>
                                                 </td>
                                             <?php endif; ?>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td nowrap="nowrap">
-                                    <b><?php print t('Order Grand Total:'); ?></b>
-                                </td>
-                                <td width="98%">
-                                    <b><?php print $order_total; ?></b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
-                                    <b><?php print t('Payment Method:'); ?></b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p><?php print t('ONLY BANK TRANSFER'); ?></p>
 
-                                    <p><?php print t('COSTS WIRE TRANSFER (if any) ARE BORNE BY CUSTOMER'); ?></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="98%">
-                                    <?php print $order_payment_method; ?>
-                                </td>
-                            </tr>
 
                             <tr>
-                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
+                                <td colspan="2" bgcolor="#B70A10" style="color: white;">
                                     <b><?php print t('Order Summary:'); ?></b>
                                 </td>
                             </tr>
@@ -198,14 +170,6 @@
                                             </tr>
                                         <?php endif; ?>
 
-                                        <tr>
-                                            <td nowrap="nowrap">
-                                                <?php print t('Products Subtotal:'); ?>&nbsp;
-                                            </td>
-                                            <td width="98%">
-                                                <?php print $order_subtotal; ?>
-                                            </td>
-                                        </tr>
 
                                         <?php foreach ($line_items as $item): ?>
                                             <?php if ($item['type'] == 'subtotal' || $item['type'] == 'total') continue; ?>
@@ -221,19 +185,11 @@
                                         <?php endforeach; ?>
                                         <tr>
                                             <td>&nbsp;</td>
-                                            <td>------</td>
                                         </tr>
-                                        <tr>
-                                            <td nowrap="nowrap">
-                                                <b><?php print t('Total for this order exclusive VAT:'); ?>&nbsp;</b>
-                                            </td>
-                                            <td>
-                                                <b><?php print $order_total; ?></b>
-                                            </td>
-                                        </tr>
+
                                         <tr>
                                             <td colspan="2">
-                                                <br/><br/><b><?php print t('Products on order exclusive VAT:'); ?>&nbsp;</b>
+                                                <br/><br/><b><?php print t('Overzicht bestelling:'); ?>&nbsp;</b>
 
                                                 <table width="100%"
                                                        style="font-family: verdana, arial, helvetica; font-size: small;">
@@ -244,12 +200,8 @@
                                                                 <b><?php print $product->qty; ?> x </b>
                                                             </td>
                                                             <td width="98%">
-
                                                                 <b><?php print $product->title; ?>
-                                                                    - <?php print $product->total_price; ?></b>
-                                                                <?php print $product->individual_price; ?><br/>
-                                                                <?php print t('SKU'); ?>: <?php print $product->model; ?><br/>
-                                                                <?php print $product->details; ?>
+
                                                             </td>
                                                         </tr>
                                                     <?php endforeach; ?>
@@ -264,17 +216,15 @@
                             <?php if ($email_text || $store_footer): ?>
                                 <tr>
                                 <?php if ($email_text): ?>
-                                    <td colspan="2" bgcolor="#b27d00" style="color: white;">
+                                    <td colspan="2" bgcolor="#B70A10" style="color: white;">
                                         <b><?php print t('SHIPPING DETAILS:'); ?></b>
                                     </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p><b><?php print t('Belgium:'); ?></b></p>
-                                            <p><?php print t('Above €250.00 excl. VAT: free transport.'); ?></p>
-                                            <p><?php print t('Below €250.00 excl. VAT: €10.00 +VAT'); ?></p>
-                                            <p><b><?php print t('abroad:'); ?></b></p>
-                                            <p><?php print t('customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
+                                            <p><b><?php print t('Belgïe:'); ?></b></p>
+                                            <p><?php print t('Bestellingen meer dan 75€: gratis levering.'); ?></p>
+                                            <p><?php print t('Bestellingen minder dan 75€: 5€ leveringskost'); ?></p>
                                         </td>
                                     </tr>
                                     <tr>
