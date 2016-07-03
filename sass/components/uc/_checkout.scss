@@ -1,0 +1,36 @@
+//================================
+// @@ ++ Checkout
+//================================
+
+form.uc-cart-checkout-form {
+  margin-bottom: 45px;
+  a {
+    text-decoration: underline;
+    color: #000000;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  input[type=text] {
+    padding: 0 0 0 5px;
+  }
+  td {
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 5px;
+  }
+  .form-wrapper {
+    line-height: 24px;
+    legend {
+      font-weight: bold;
+    }
+  }
+  #cart-pane, #customer-pane, #billing-pane {
+    margin-bottom: 20px;
+  }
+  #customer-pane {
+    background: $pink;
+    color: #ffffff;
+    padding: 0 10px 10px 10px;
+  }
+}

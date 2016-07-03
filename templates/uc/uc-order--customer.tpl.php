@@ -108,12 +108,16 @@
                                                 <b><?php print t('Billing Address:'); ?></b><br/>
                                                 <?php print $order_billing_address; ?><br/>
                                                 <br/>
+                                                <b><?php print t('Billing Phone:'); ?></b><br/>
+                                                <?php print $order_billing_phone; ?><br/>
                                             </td>
                                             <?php if ($shippable): ?>
                                                 <td valign="top" width="50%">
                                                     <b><?php print t('Shipping Address:'); ?></b><br/>
                                                     <?php print $order_shipping_address; ?><br/>
                                                     <br/>
+                                                    <b><?php print t('Shipping Phone:'); ?></b><br/>
+                                                    <?php print $order_shipping_phone; ?><br/>
                                                 </td>
                                             <?php endif; ?>
                                         </tr>
@@ -221,7 +225,7 @@
                                     </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td colspan="2">
                                             <p><b><?php print t('Belgïe:'); ?></b></p>
                                             <p><?php print t('Bestellingen meer dan 75€: gratis levering.'); ?></p>
                                             <p><?php print t('Bestellingen minder dan 75€: 5€ leveringskost'); ?></p>

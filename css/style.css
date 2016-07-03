@@ -2672,6 +2672,10 @@ p {
   line-height: 32px;
   text-align: center; }
 
+.btn {
+  border-radius: 0;
+  margin: 0 5px; }
+
 #toolbar {
   margin-top: 50px; }
 
@@ -2991,7 +2995,8 @@ fieldset.collapsible {
   width: 98%; }
   #uc-cart-view-form table td {
     padding: 15px;
-    text-align: left; }
+    text-align: left;
+    vertical-align: middle; }
 #uc-cart-view-form .form-actions {
   margin-top: 10px; }
 
@@ -3021,6 +3026,30 @@ fieldset.collapsible {
       height: 100px;
       vertical-align: middle;
       padding: 0 10px; }
+
+form.uc-cart-checkout-form {
+  margin-bottom: 45px; }
+  form.uc-cart-checkout-form a {
+    text-decoration: underline;
+    color: #000000; }
+    form.uc-cart-checkout-form a:hover {
+      text-decoration: none; }
+  form.uc-cart-checkout-form input[type=text], form.uc-cart-checkout-form input[type=email] {
+    padding: 0 0 0 5px; }
+  form.uc-cart-checkout-form td {
+    height: 30px;
+    vertical-align: middle;
+    padding-left: 5px; }
+  form.uc-cart-checkout-form .form-wrapper {
+    line-height: 24px; }
+    form.uc-cart-checkout-form .form-wrapper legend {
+      font-weight: bold; }
+  form.uc-cart-checkout-form #cart-pane, form.uc-cart-checkout-form #customer-pane, form.uc-cart-checkout-form #billing-pane {
+    margin-bottom: 20px; }
+  form.uc-cart-checkout-form #customer-pane {
+    background: #f6656a;
+    color: #ffffff;
+    padding: 0 10px 10px 10px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
