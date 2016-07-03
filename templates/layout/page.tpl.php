@@ -26,7 +26,7 @@ include __DIR__ . '/../includes/nav.inc.php';
 
   include __DIR__ . '/../includes/page--header.inc.php';
   ?>
-
+<div class="sectionpage__container__wrap">
   <div class="container sectionpage__container">
     <div class="row">
       <div class="layout--content <?php print $contentlayout; ?>">
@@ -54,6 +54,8 @@ include __DIR__ . '/../includes/nav.inc.php';
         </aside>
       <?php endif; ?>
     </div>
+</div>
+
 </section>
 
 <footer class="navbar-fixed-bottom">

@@ -80,7 +80,9 @@
   }
 }
 
+// =====================================
 // section--corebusiness
+// de 3 blokken op section 4
 // ======================================
 
 .section--corebusiness {
@@ -113,14 +115,17 @@
   }
 }
 
+// ====================================
+// opmaak voor page.tpl.php
+// ====================================
 .section--page {
-  //background: $grey;
-  margin-top: 70px;
-  //min-height: 93vh;
-  .sectionpage__container {
+  .sectionpage__container__wrap {
     background: $darkgrey;
-    overflow: auto;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    margin-top: 70px;
+    //min-height: 93vh;
+    .sectionpage__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 }

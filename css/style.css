@@ -2664,7 +2664,8 @@ body {
 
 p {
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 25px;
+  margin: 15px 0; }
 
 .paragraph p {
   font-size: 22px;
@@ -2783,13 +2784,12 @@ p {
     .section--corebusiness .corebusiness__region .corebusiness__img {
       overflow: hidden; }
 
-.section--page {
+.section--page .sectionpage__container__wrap {
+  background: #888888;
   margin-top: 70px; }
-  .section--page .sectionpage__container {
-    background: #888888;
-    overflow: auto;
+  .section--page .sectionpage__container__wrap .sectionpage__container {
     padding-top: 30px;
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
 
 footer {
   background-color: #000000; }
@@ -2850,6 +2850,7 @@ footer {
       font-weight: bold; }
 
 .page--tpl__logo {
+  padding-top: 75px;
   margin-bottom: 20px; }
 
 .btn-default, .btncontact__btn, .btnmobile__btn {
@@ -3000,15 +3001,26 @@ fieldset.collapsible {
 .form-type-uc-quantity input[type=text], .form-type-uc-quantity input[type=email] {
   padding: 5px; }
 
+.block-uc-cart {
+  background: #f6656a;
+  padding: 15px;
+  color: #ffffff; }
+  .block-uc-cart table td {
+    height: 25px; }
+  .block-uc-cart a {
+    color: #ffffff; }
+  .block-uc-cart .cart-block-item-price, .block-uc-cart .cart-block-summary-total {
+    display: none; }
+
 .view-id-producten {
+  font-size: 14px;
   margin-top: 25px; }
-  .view-id-producten .btnbestellen__btn {
-    font-size: 1.5em; }
   .view-id-producten table {
     width: 99%; }
     .view-id-producten table td {
       height: 100px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding: 0 10px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/

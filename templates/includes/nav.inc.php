@@ -4,7 +4,7 @@
  * User: Stefan
  * Date: 20/06/2016
  * Time: 14:44
- */?>
+ */ ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -48,7 +48,7 @@
              * TODO Dashboard link
              */
             // include 'dashboard.inc.php';
-            
+
             print '<li>' . '<a href="' . url('user/logout') . '">' . t('Uitloggen') . '</a>' . '</li>';
 
           } else {
@@ -61,15 +61,32 @@
             print '<li>
                         <a href="' . url('user/register') . '">' . t(' Registeer') . '</a>
                         </li>';
-          } ?>
-          <!-- link naar alle producten -->
-          <?php print '<li><a href=' . base_path() . '#>' . t(' Producten') . '</a></li>'; ?>
+          }
+
+          /**
+           * cart icon met aantal items in nav-bar wordt enkel getoond als er inhoud is.
+           */
+          $items = uc_cart_get_contents();
+          $total_qty = 0;
+
+          foreach ($items as $item) {
+            while (list($key, $value) = each($item)) {
+              if ($key == 'qty') $qty = $value;
+            }
+            $total_qty += $qty;
+          }
+          if ($total_qty > '0')
+            print '<li>' . '<a href=' . base_path() . 'cart>' . '<i class="fa fa-shopping-cart"></i> ' . $total_qty . '</a></li>';
+          else;
+          print '';
+          ?>
+
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">HOME</a>
-        <?php print '<li>' . '<a href=' . base_path() . 'bestellen>' . t('BESTELLEN') . '</a></li>'; ?>
-        <?php print '<li>' . '<a href=' . base_path() . 'tKalfshuys-contacteren>' .  t('CONTACT') . '</a></li>'; ?>
+          <?php print '<li>' . '<a href=' . base_path() . 'bestellen>' . t('BESTELLEN') . '</a></li>'; ?>
+          <?php print '<li>' . '<a href=' . base_path() . 'tKalfshuys-contacteren>' . t('CONTACT') . '</a></li>'; ?>
 
       </ul>
     </div>

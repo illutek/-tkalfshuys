@@ -2,7 +2,7 @@
 // @@ ++ Cart
 //================================
 
-// Cart
+// Cart overzicht inhoud cart /cart
 
 #uc-cart-view-form {
   table {
@@ -25,5 +25,25 @@
 .form-type-uc-quantity {
   input[type=text] {
     padding: 5px;
+  }
+}
+
+// Cart in de sidebar-first wordt enkel getoond op pagina's
+// producten-kalfsvlees - producten-huisbereidingen - producten-rundsvlees
+
+.block-uc-cart {
+  background: $pink;
+  padding: 15px;
+  color: #ffffff;
+  table {
+    td {
+      height: 25px;
+    }
+  }
+  a {
+    color: #ffffff;
+  }
+  .cart-block-item-price, .cart-block-summary-total {
+    display: none;
   }
 }

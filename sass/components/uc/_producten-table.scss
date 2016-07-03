@@ -5,15 +5,15 @@
 //===========================================================================================================
 
 .view-id-producten {
+  font-size: 14px;
   margin-top: 25px;
-  .btnbestellen__btn {
-    font-size: 1.5em;
-  }
   table {
     width: 99%;
     td {
       height: 100px;
       vertical-align: middle;
+      padding: 0 10px;
+
     }
   }
 }
