@@ -5,27 +5,23 @@
 
 .section--homepage {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   background-color: #000000;
   position: relative;
-  z-index: 2;
   .sectionhomepage__bcg {
     background: url("../images/runderen.jpg") no-repeat;
     position: absolute;
     height: 101%;
     background-size: cover;
-    z-index: 1;
     width: 100vw;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 
 .homepage--container {
   z-index: 2;
   .homepage__logo--slogan {
+    margin-top: 30%;
     .btn--cta {
       .btncta__btn {
         margin-top: 15px;
@@ -46,20 +42,15 @@
 
 .section--50 {
   min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .section--quality {
+  padding-top: 5%;
   color: #ffffff;
   background: url("../images/background_lozenge_36.jpg") repeat;
   .container--quality {
     background-color: $pink;
     padding: 40px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .sectionquality__img {
       text-align: center;
     }
@@ -67,6 +58,7 @@
 }
 
 .section--aboutus {
+  padding-top: 5%;
   color: $bordeau;
   .container--aboutus {
     padding: 40px 10px;
@@ -86,13 +78,12 @@
 // ======================================
 
 .section--corebusiness {
+  .container--corebusiness {
+    padding-top: 10%;
+  }
   color: #ffffff;
   min-height: 100vh;
   background-color: $grey;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   .corebusiness__region {
     height: 650px;
     background-color: $darkgrey;
@@ -122,7 +113,6 @@
   .sectionpage__container__wrap {
     background: $darkgrey;
     margin-top: 70px;
-    //min-height: 93vh;
     .sectionpage__container {
       padding-top: 30px;
       padding-bottom: 30px;

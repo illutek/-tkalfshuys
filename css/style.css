@@ -2711,53 +2711,46 @@ p {
 
 .section--homepage {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   background-color: #000000;
-  position: relative;
-  z-index: 2; }
+  position: relative; }
   .section--homepage .sectionhomepage__bcg {
     background: url("../images/runderen.jpg") no-repeat;
     position: absolute;
     height: 101%;
     background-size: cover;
-    z-index: 1;
     width: 100vw;
-    opacity: 0.9; }
+    opacity: 0.8; }
 
 .homepage--container {
   z-index: 2; }
-  .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn, .homepage--container .homepage__logo--slogan .btn--cta .btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .btnmobile__btn {
-    margin-top: 15px; }
-    .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
-      transition: all 0.5s ease-in-out;
-      margin-top: 75px;
-      font-size: 2.5em; }
+  .homepage--container .homepage__logo--slogan {
+    margin-top: 30%; }
+    .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn, .homepage--container .homepage__logo--slogan .btn--cta .btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .btnmobile__btn {
+      margin-top: 15px; }
+      .homepage--container .homepage__logo--slogan .btn--cta .btncta__btn.parallax__effect, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btncontact__btn, .homepage--container .homepage__logo--slogan .btn--cta .parallax__effect.btnmobile__btn {
+        transition: all 0.5s ease-in-out;
+        margin-top: 75px;
+        font-size: 2.5em; }
 
 .sectionhomepage__title__cta {
   padding-top: 50px; }
 
 .section--50 {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  min-height: 50vh; }
 
 .section--quality {
+  padding-top: 5%;
   color: #ffffff;
   background: url("../images/background_lozenge_36.jpg") repeat; }
   .section--quality .container--quality {
     background-color: #f6656a;
-    padding: 40px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    padding: 40px 10px; }
     .section--quality .container--quality .sectionquality__img {
       text-align: center; }
 
 .section--aboutus {
+  padding-top: 5%;
   color: #6e0908; }
   .section--aboutus .container--aboutus {
     padding: 40px 10px; }
@@ -2770,11 +2763,9 @@ p {
 .section--corebusiness {
   color: #ffffff;
   min-height: 100vh;
-  background-color: #adadad;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
+  background-color: #adadad; }
+  .section--corebusiness .container--corebusiness {
+    padding-top: 10%; }
   .section--corebusiness .corebusiness__region {
     height: 650px;
     background-color: #888888; }
