@@ -43,8 +43,6 @@ else: ?>
     <h3><?php print render($content['field_titel_bestellen']); ?></h3>
     <?php print render($content['field_info_bestellen']); ?>
 
-    <?php print '<p>' . t('Hier de link naar de producten of iets dergelijks') . '</p>'; ?>
-    <br>
     <?php
     print '<a href="producten-huisbereidingen">' . '<button class="btn-default btnbestellen__btn">' . t('Huisbereidingen') . '</button></a>';
     if ($field_wat_verkocht["und"][0]["value"] === "kalfs"):

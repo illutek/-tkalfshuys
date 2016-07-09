@@ -4,10 +4,17 @@
 // full node
 .product_list {
   margin-top: 25px;
+
+
   .product_info__body {
     background: #ffffff;
     padding: 25px;
     margin: 0 0 15px 0;
+    table {
+      td {
+        height: 25px;
+      }
+    }
   }
 }
 

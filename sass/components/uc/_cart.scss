@@ -17,11 +17,12 @@
   .form-actions {
     margin-top: 10px;
   }
+  .price, .subtotal, th {
+    display: none;
+  }
 }
 
-.price, .subtotal, th {
-  display: none;
-}
+
 
 .form-type-uc-quantity {
   input[type=text] {

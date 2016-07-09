@@ -2781,7 +2781,7 @@ p {
 
 .section--page .sectionpage__container__wrap {
   background: #888888;
-  margin-top: 70px; }
+  margin: 70px 0; }
   .section--page .sectionpage__container__wrap .sectionpage__container {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -2969,6 +2969,8 @@ fieldset.collapsible {
     background: #ffffff;
     padding: 25px;
     margin: 0 0 15px 0; }
+    .product_list .product_info__body table td {
+      height: 25px; }
 
 .body_teaser {
   padding: 10px;
@@ -2990,8 +2992,7 @@ fieldset.collapsible {
     vertical-align: middle; }
 #uc-cart-view-form .form-actions {
   margin-top: 10px; }
-
-.price, .subtotal, th {
+#uc-cart-view-form .price, #uc-cart-view-form .subtotal, #uc-cart-view-form th {
   display: none; }
 
 .form-type-uc-quantity input[type=text], .form-type-uc-quantity input[type=email] {

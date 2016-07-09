@@ -79,7 +79,13 @@
             print '<li>' . '<a href=' . base_path() . 'cart>' . '<i class="fa fa-shopping-cart"></i> ' . $total_qty . '</a></li>';
           else;
           print '';
+
+          /**
+           * include dashboard en het toevoegen van producten voor enkel de editor
+           */
+          include __DIR__ . '/../includes/dashboard.inc.php';
           ?>
+
 
 
       </ul>

@@ -35,6 +35,7 @@ function kalfshuys_preprocess_node(&$variables)
   if (module_exists('uc_product') && uc_product_is_product($variables)){
     $variables['uc_image_teaser'] = drupal_render($variables['content']['uc_product_image'][0]);
     $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
+    $variables['uc_pakketPrice'] = drupal_render($variables['content']['cost']);
     $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
     $variables['uc_body'] = drupal_render($variables['content']['body']);
 

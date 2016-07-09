@@ -45,7 +45,14 @@ if ($teaser): ?>
           <?php print (isset($uc_body) ? $uc_body : ''); ?>
         </div>
         <div class="sell-price">
-          <?php print (isset($uc_sellPrice) ? $uc_sellPrice : ''); ?>
+          <?php
+          $fieldPakketPrice = field_get_items('node', $node, 'cost');
+          if ($fieldPakketPrice) {
+            print $uc_pakketPrice;
+          } else {
+            print $uc_sellPrice;
+          }
+          ?>
         </div>
         <?php print $uc_addCart; ?>
       </div>

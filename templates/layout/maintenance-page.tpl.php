@@ -43,9 +43,6 @@
               <?php print '<h2>' . '<span>' . t('KALFSVLEES VOOR ECHTE FIJNPROEVERS') . '</span></h2>'; ?>
             <?php endif; ?>
 
-            <?php if (!empty($site_slogan)): ?>
-              <div id="site-slogan"><?php print $site_slogan; ?></div>
-            <?php endif; ?>
           </div> <!-- /name-and-slogan -->
         </div> <!-- /logo-title -->
 
