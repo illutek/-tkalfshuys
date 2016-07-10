@@ -36,8 +36,14 @@ Een aantal velden verwijdert (display: none) in het adminimal theme (style.css),
 heiligd de middelen.
 
 ### Acties
-Op de homepage, een inhoudstype 'Actie' zichtbaar tot datum, op de page--front.tpl.php een include 'actions.inc.php'
-met ´´´render($page['actie'])´´´ 
+Op de homepage, een inhoudstype 'Actie' zichtbaar tot datum, op de page--front.tpl.php een include 
+De 'actions.inc.php' met 
+´´´<?php if ($page['actie']): ?>  
+      <div class="actions--wrap col-md-12">  
+        <?php print render($page['actie']); ?>  
+      </div>  
+   <?php endif; ?>  
+´´´ 
 Een node--actie.tpl.php voor het printen van de inhoud.
 Een view acties om een block te creëren.
 Met jquery een hover effect op de actie titel om de gehele actie te tonen (actions.js)

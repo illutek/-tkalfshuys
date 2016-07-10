@@ -31,7 +31,7 @@ include __DIR__ . '/../includes/nav.inc.php';
 <section class="section--homepage">
   <?php
   /**
-   *
+   * Actie enkel 1, en zichtbaar tot ingestelde datum
    */
   include __DIR__ . '/../includes/actions.inc.php';
   ?>
@@ -173,7 +173,6 @@ include __DIR__ . '/../includes/nav.inc.php';
           </header>
           <div class="email">
             <a href="mailto:steven.van.nijlen@telenet.be">
-
               <script>
                 document.write("<a href=\"mail" + "to:" + new Array("steven.van.nijlen", "telenet.be").join("@") + "\">"
                 + "<i class=\"fa fa-envelope-o\" aria-hidden=\"true\"></i>" + " Dit kan via e-mail" + "</" + "a>");
