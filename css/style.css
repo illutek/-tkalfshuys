@@ -2897,6 +2897,35 @@ footer {
 .navbar-inverse .navbar--brand .navbar-brand {
   padding: 20px 15px; }
 
+.actions--wrap {
+  position: absolute;
+  top: 100px;
+  z-index: 999; }
+  .actions--wrap .actions--wrap__title {
+    background: #f6656a;
+    color: #ffffff;
+    padding: 15px 25px;
+    opacity: 0.7; }
+    .actions--wrap .actions--wrap__title:hover {
+      opacity: 1.0;
+      cursor: pointer; }
+  .actions--wrap .actions--wrap__body {
+    background: #f6656a;
+    color: #ffffff;
+    padding: 15px 25px;
+    margin-top: 5px;
+    opacity: 1.0; }
+  .actions--wrap .action__hide {
+    display: none; }
+  .actions--wrap .fa-caret-down, .actions--wrap .fa-caret-up {
+    margin-left: 10px; }
+
+@media only screen and (max-width: 1366px) {
+  /* css code voor tablets in landscape mode*/
+  .actions--wrap {
+    right: 10px; }
+    .actions--wrap .actions--wrap__title h4 {
+      font-size: 16px; } }
 .webform-component-textarea textarea {
   padding: 5px; }
 .webform-component-textarea .grippie {

@@ -1,0 +1,47 @@
+//================================
+// @@ ++ Actions op de frontpage
+//================================
+.actions--wrap {
+  position: absolute;
+  //right: 50px;
+  top: 100px;
+  z-index: 999;
+  .actions--wrap__title {
+    background: $pink;
+    color: #ffffff;
+    padding: 15px 25px;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1.0;
+      cursor: pointer;
+    }
+  }
+  .actions--wrap__body {
+    background: $pink;
+    color: #ffffff;
+    padding: 15px 25px;
+    margin-top: 5px;
+    opacity: 1.0;
+  }
+  .action__hide {
+    display: none;
+  }
+
+  .fa-caret-down, .fa-caret-up {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+/* css code voor tablets in landscape mode*/
+
+  .actions--wrap {
+    right: 10px;
+    .actions--wrap__title {
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+
+}

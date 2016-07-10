@@ -55,6 +55,7 @@ function kalfshuys_preprocess_page(&$variables)
    */
   if (drupal_is_front_page()) {
     drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/parallax.js', array('weight' => 5));
+    drupal_add_js(drupal_get_path('theme', 'kalfshuys') . '/js/actions.js', array('weight' => 6));
   }
 
   // Add a copyright message to the footer_small.inc.php

@@ -7,6 +7,7 @@
  * TODO wil deze teaser gaan gebruiken maar dan in tabel vorm, nu wordt dit in views opgezet,
  * TODO probleem is het field 'COST' wil hier een voorwaarde inbouwen en met views zie het niet.
  * 1ste poging met views conditional fields om een of andere reden lukt dit niet (tubes-electron wel).
+ * Voorlopige oplossing geen prijzen getoond in het tabel overzicht.
  */
 
 

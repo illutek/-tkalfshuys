@@ -29,6 +29,13 @@ include __DIR__ . '/../includes/nav.inc.php';
 <div id="parallax-anchor"></div>
 
 <section class="section--homepage">
+  <?php
+  /**
+   *
+   */
+  include __DIR__ . '/../includes/actions.inc.php';
+  ?>
+
   <div class="sectionhomepage__bcg"></div>
   <div class="container homepage--container">
     <div class="homepage__logo--slogan">
