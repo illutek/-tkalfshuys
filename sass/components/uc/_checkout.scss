@@ -4,6 +4,9 @@
 
 form.uc-cart-checkout-form {
   margin-bottom: 45px;
+  th.price, td.price, td.subtotal {
+    display: none;
+  }
   a {
     text-decoration: underline;
     color: #000000;
@@ -32,5 +35,23 @@ form.uc-cart-checkout-form {
     background: $pink;
     color: #ffffff;
     padding: 0 10px 10px 10px;
+    input {
+      color: #000000;
+    }
+  }
+}
+
+table.order-review-table {
+  table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  tr.odd, tr.even {
+  }
+  td, th {
+    padding: 2px 10px;
+    &.price {
+      display: none;
+    }
   }
 }

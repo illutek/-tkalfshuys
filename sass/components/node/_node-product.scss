@@ -4,8 +4,6 @@
 // full node
 .product_list {
   margin-top: 25px;
-
-
   .product_info__body {
     background: #ffffff;
     padding: 25px;
@@ -15,6 +13,13 @@
         height: 25px;
       }
     }
+  }
+  .sell--price {
+    padding: 20px;
+    color: #ffffff;
+    background: $pink;
+    display: inline-block!important;
+
   }
 }
 

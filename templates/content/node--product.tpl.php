@@ -4,7 +4,11 @@
  * User: Stefan
  * Date: 1/07/2016
  * Time: 12:44
+ * TODO wil deze teaser gaan gebruiken maar dan in tabel vorm, nu wordt dit in views opgezet,
+ * TODO probleem is het field 'COST' wil hier een voorwaarde inbouwen en met views zie het niet.
+ * 1ste poging met views conditional fields om een of andere reden lukt dit niet (tubes-electron wel).
  */
+
 
 if ($teaser): ?>
   <div class="body_teaser">
@@ -16,13 +20,6 @@ if ($teaser): ?>
     <?php print $title; ?>
     <?php print $uc_addCart; ?>
   </div>
-  <?php
-  /**
-   * variables van template.php
-   */
-  print $details;
-
-  ?>
 
 <?php else: ?>
   <div class="product_list">
@@ -44,8 +41,11 @@ if ($teaser): ?>
         <div class="product_info__body">
           <?php print (isset($uc_body) ? $uc_body : ''); ?>
         </div>
-        <div class="sell-price">
+        <div class="sell--price">
           <?php
+          /**
+           * Toon de pakket prijs enkel als dit veld inhoud heeft toon anders de prijs per kilogram.
+           */
           $fieldPakketPrice = field_get_items('node', $node, 'cost');
           if ($fieldPakketPrice) {
             print $uc_pakketPrice;

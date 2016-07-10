@@ -6,8 +6,8 @@
  * Time: 16:12
  */?>
 
-  <div class="container copyright">
-    <!-- copyright -->
-    <?php print $copyright; ?>
+  <div class="copyright container">
+      <!-- copyright -->
+      <?php print $copyright; ?>
   </div>
 

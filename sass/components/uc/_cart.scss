@@ -13,6 +13,14 @@
       text-align: left;
       vertical-align: middle;
     }
+    .product-description {
+      font-size: 12px;
+      padding-top: 10px;
+    }
+  }
+  input#edit-continue-shopping {
+    background: $pink;
+    color: #ffffff;
   }
   .form-actions {
     margin-top: 10px;
@@ -21,9 +29,6 @@
     display: none;
   }
 }
-
-
-
 .form-type-uc-quantity {
   input[type=text] {
     padding: 5px;
@@ -40,6 +45,9 @@
   table {
     td {
       height: 25px;
+    }
+    td.cart-block-item-title {
+      padding-left: 5px;
     }
   }
   a {

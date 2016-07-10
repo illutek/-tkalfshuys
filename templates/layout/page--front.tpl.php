@@ -34,24 +34,33 @@ include __DIR__ . '/../includes/nav.inc.php';
     <div class="homepage__logo--slogan">
       <div class="row">
         <div class="col-md-3">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+          <div class="homepage__logo--large">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+          </div>
+          <div class="homepage__logo--small">
+            <a href="<?php print $front_page; ?>">
+              <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png"/>
+            </a>
+          </div>
         </div>
         <div class="col-md-9 sectionhomepage__title__cta">
           <div class="col-md-12">
             <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
           </div>
-
-
           <div class="col-md-12 btn--cta">
-            <!-- de link naar bestel form zou gemakkelijk aanpasbaar moeten
-            zijn voor de editors 2 forms via een checkbox bv -->
-            <?php include __DIR__ . '/../includes/button-cta.inc.php'; ?>
+            <?php
+            /**
+             * de link naar bestel form zou gemakkelijk aanpasbaar moeten
+             * zijn voor de editors 2 forms via een checkbox bv
+             * Is ondertussen 2016-07-01 uitgevoerd via tussen pagina 'Bestellen'
+             * (inhoudstype 'Werkwijze')
+             */
+            include __DIR__ . '/../includes/button-cta.inc.php'; ?>
           </div>
-
-
         </div>
       </div>
-    </div><!-- end homepage__logo--slogan -->
+    </div>
+    <!-- end homepage__logo--slogan -->
 
   </div>
 </section>
@@ -136,9 +145,11 @@ include __DIR__ . '/../includes/nav.inc.php';
             include __DIR__ . '/../includes/phone.inc.php';
             ?>
 
-          </div> <!-- end mobile--phone -->
+          </div>
+          <!-- end mobile--phone -->
 
-        </div> <!-- end footermain__item call-us--region -->
+        </div>
+        <!-- end footermain__item call-us--region -->
 
       </div>
       <!-- end contact--region -->
@@ -191,7 +202,7 @@ include __DIR__ . '/../includes/nav.inc.php';
   </div>
 </footer>
 
-<footer>
+<footer class="footer__small">
   <?php
   /**
    * footer enkel met copyright vermelding

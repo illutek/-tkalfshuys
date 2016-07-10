@@ -38,7 +38,6 @@ function kalfshuys_preprocess_node(&$variables)
     $variables['uc_pakketPrice'] = drupal_render($variables['content']['cost']);
     $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
     $variables['uc_body'] = drupal_render($variables['content']['body']);
-
     $variables['uc_addCart'] = drupal_render($variables['content']['add_to_cart']);
   }
 
@@ -59,7 +58,6 @@ function kalfshuys_preprocess_page(&$variables)
   }
 
   // Add a copyright message to the footer_small.inc.php
-
   $variables['copyright'] = t('\'t Kalfshuys') . ' © ' . date("Y");
 
   /**

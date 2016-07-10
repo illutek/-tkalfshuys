@@ -58,7 +58,7 @@ include __DIR__ . '/../includes/nav.inc.php';
 
 </section>
 
-<footer class="navbar-fixed-bottom">
+<footer class="navbar-fixed-bottom footer__small">
   <?php
   /**
    * footer enkel met copyright vermelding

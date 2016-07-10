@@ -4,7 +4,7 @@
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/
-  ._2p3a {
+  .fb_iframe_widget {
     width: 245px;
   }
 }
@@ -14,7 +14,6 @@
   h1 {
     font-size: 2.9em;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -27,6 +26,13 @@
   .homepage--container {
     z-index: 2;
     .homepage__logo--slogan {
+      margin-top: 20%;
+      .homepage__logo--large {
+        display: none;
+      }
+      .homepage__logo--small {
+        display: block;
+      }
       .btn--cta {
         .btncta__btn {
           &.parallax__effect {
@@ -39,6 +45,20 @@
     }
   }
 
+  .section--page {
+    .sectionpage__container__wrap {
+      margin: 20px 0;
+    }
+  }
+
+  .sectionhomepage__title__cta {
+    padding-top: 20px;
+  }
+  .page--tpl__logo {
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+
   .section--quality {
     padding: 15px 0;
     .paragraph {
@@ -48,8 +68,17 @@
       display: none;
     }
   }
-  .corebusiness__region {
-    margin: 10px 0;
+
+  .section--corebusiness {
+    .corebusiness__region {
+      margin: 10px 0;
+      .corebusiness__item {
+        padding: 10px 15px;
+      }
+      h4 {
+        font-size: 1.8em;
+      }
+    }
   }
 
   .section--page {
@@ -59,11 +88,15 @@
       margin-bottom: 25px;
     }
   }
+
+  h1 {
+    font-size: 2.3em;
+  }
   h2 {
-    font-size: 2.5em;
+    font-size: 2.1em;
   }
   h3 {
-    font-size: 2em;
+    font-size: 1.9em;
   }
   .btncta__btn {
     padding: 10px;
@@ -72,24 +105,114 @@
       padding: 0 10px 0;
     }
   }
-  .footermain__item {
-    margin-bottom: 25px;
+
+  // De bestellen pagina de vleeskalender verkleinen
+  .view-id-vleeskalender {
+    font-size: 12px;
   }
 
-  .footer--main {
-    .mobilephone__mobile {
-      display: block;
+  // De producten pagina font-size en een aantal velden niet tonen
+  .view-id-producten {
+    font-size: 12px;
+    table {
+      td {
+        padding: 0 5px;
+      }
     }
-    .mobilephone__desktop {
+    input[type="submit"] {
+      font-size: 10px;
+    }
+    td.views-field-uc-product-image, .views-field-view-node {
       display: none;
     }
   }
 
-  .btnmobile__btn {
-    margin-top: 20px;
-    padding: 8px;
-    font-size: 1.2em;
+  // Product node
+  .product_list {
+    .product_img {
+      display: none;
+    }
   }
+
+  // Winkelwagentje image veld niet tonen en font-size
+  #cart-form-pane {
+    font-size: 12px;
+    input[type="submit"] {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    td.image {
+      display: none;
+
+    }
+  }
+  #uc-cart-view-form .form-actions {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  // geen idee vanwaar dit tussen de tabel met producten zit en de verschillende buttuns
+  // voor de winkelwagen actions heeft standaard een hoogte van 25px, dit zelf 2 keer
+  // door deze hoogte te verminderen zitten de buttons iets korter bij de tabel
+  .uc-cart-item-uc-cart-item {
+    height: 5px;
+  }
+
+  // Het bestel formulier
+  .uc-store-address-field {
+    .form-item {
+      label {
+        text-align: left;
+      }
+    }
+  }
+
+  // Order-review = laatste form voor het uiteindelijk plaatsen van de bestelling.
+  .order-review-table {
+    width: 360px;
+    td, .title-col {
+      text-align: left;
+      padding-left: 5px;
+    }
+    .data-col {
+      padding-right: 5px;
+    }
+
+    .review-button-row {
+      td {
+        text-align: left;
+      }
+    }
+  }
+
+  .footermain__item {
+    margin-bottom: 25px;
+  }
+  .footer {
+    .footer--main {
+      .call-us--region {
+        // afwijkende hoogte omwillen van de gsm buttons andere footer-regions zijn 390px hoog.
+        height: 410px;
+      }
+      .mobilephone__mobile {
+        display: block;
+      }
+      .mobilephone__desktop {
+        display: none;
+      }
+    }
+
+    .btnmobile__btn {
+      margin-top: 20px;
+      padding: 8px;
+      font-size: 1.2em;
+    }
+  }
+
+  .footer__small {
+    display: none;
+  }
+
 }
 
 
