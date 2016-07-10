@@ -35,3 +35,10 @@ https://www.drupal.org/project/no_field_markup lossen we dit probleem op.
 Een aantal velden verwijdert (display: none) in het adminimal theme (style.css), niet de mooiste manier, maar het doel
 heiligd de middelen.
 
+### Acties
+Op de homepage, een inhoudstype 'Actie' zichtbaar tot datum, op de page--front.tpl.php een include 'actions.inc.php'
+met ´´´render($page['actie'])´´´ 
+Een node--actie.tpl.php voor het printen van de inhoud.
+Een view acties om een block te creëren.
+Met jquery een hover effect op de actie titel om de gehele actie te tonen (actions.js)
+

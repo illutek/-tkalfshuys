@@ -16,6 +16,7 @@ scripts[]   =   js/hamburger.js
 
 ;REGIONS
 regions[content]    = Content
+regions[actie]      = Actie
 regions[quality]    = Quality
 regions[aboutus]    = About US
 regions[corebusiness1]  = CoreBusiness 1
