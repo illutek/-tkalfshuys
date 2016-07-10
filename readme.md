@@ -38,13 +38,14 @@ heiligd de middelen.
 ### Acties
 Op de homepage, een inhoudstype 'Actie' zichtbaar tot datum, op de page--front.tpl.php een include 
 De 'actions.inc.php' met 
-´´´<?php if ($page['actie']): ?>  
+```
+<?php if ($page['actie']): ?>  
       <div class="actions--wrap col-md-12">  
         <?php print render($page['actie']); ?>  
       </div>  
    <?php endif; ?>  
-´´´ 
-Een node--actie.tpl.php voor het printen van de inhoud.
-Een view acties om een block te creëren.
+```
+Een node--actie.tpl.php voor het printen van de inhoud.  
+Een view acties om een block te creëren.  
 Met jquery een hover effect op de actie titel om de gehele actie te tonen (actions.js)
 
