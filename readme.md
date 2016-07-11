@@ -49,3 +49,18 @@ Een node--actie.tpl.php voor het printen van de inhoud.
 Een view acties om een block te creëren.  
 Met jquery een hover effect op de actie titel om de gehele actie te tonen (actions.js)
 
+###Pakket prijzen
+Familie pakket hebben geen kilo prijs maar een totaal prijs, om dit op te lossen in eerste instantie het produktveld
+'cost' gebruikt maar loop hier tegen toegangsrechten op.  
+Dan maar een extra veld 'Pakketprijs' aangemaakt, met een if structuur controleren of dit veld een waarde heeft en dit  
+op volgende manier   
+```
+$fieldPakketPrice = field_get_items('node', $node, 'field_pakketprijs');  
+if ($fieldPakketPrice) {
+            print $uc_pakketPrice;
+          } else {
+            print $uc_sellPrice;
+          }
+```  
+De uc_pakketPrice en uc_sellPrice worden ingesteld op template.php
+

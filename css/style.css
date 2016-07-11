@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, .page--tpl__logo .page--tpl__title, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -2626,10 +2626,10 @@ table {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-h1, h2, h3, h4, h5 {
+h1, .page--tpl__logo .page--tpl__title, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif; }
 
-h1 {
+h1, .page--tpl__logo .page--tpl__title {
   font-size: 3.3em;
   color: #ffffff; }
 
@@ -2705,7 +2705,7 @@ p {
     margin-top: 35px;
     color: #000;
     background: #ffffff; }
-    .maintenance-page #content h1 {
+    .maintenance-page #content h1, .maintenance-page #content .page--tpl__logo .page--tpl__title, .page--tpl__logo .maintenance-page #content .page--tpl__title {
       color: #000000;
       margin-bottom: 15px; }
 
@@ -2825,13 +2825,16 @@ footer {
   color: #adadad;
   padding: 20px 15px; }
 
+.footer--small__slogan {
+  text-align: right; }
+
 .mobilephone__desktop {
   margin: 15px 0; }
 
 .layoutcontent__bestellen {
   background: #ffffff;
   padding: 25px 15px; }
-  .layoutcontent__bestellen h1 {
+  .layoutcontent__bestellen h1, .layoutcontent__bestellen .page--tpl__logo .page--tpl__title, .page--tpl__logo .layoutcontent__bestellen .page--tpl__title {
     color: #000000; }
   .layoutcontent__bestellen table {
     margin-top: 25px;
@@ -3106,7 +3109,7 @@ table.order-review-table td, table.order-review-table th {
     width: 245px; } }
 @media only screen and (max-width: 960px) {
   /* css code voor tablets in portrait mode */
-  h1 {
+  h1, .page--tpl__logo .page--tpl__title {
     font-size: 2.9em; } }
 @media only screen and (max-width: 767px) {
   /* css code voor smartphones in landscape mode */ }
@@ -3155,7 +3158,7 @@ table.order-review-table td, table.order-review-table th {
     .section--page .layout--content {
       margin-bottom: 25px; }
 
-  h1 {
+  h1, .page--tpl__logo .page--tpl__title {
     font-size: 2.3em; }
 
   h2 {

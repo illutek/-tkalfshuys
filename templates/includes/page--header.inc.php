@@ -10,11 +10,11 @@
   <div class="row">
     <div class="col-md-2">
       <a href="<?php print $front_page; ?>">
-        <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png"/>
+        <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png" alt="'t Kalfshuys"/>
       </a>
     </div>
     <div class="col-md-10 sectionhomepage__title__cta">
-      <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
+      <div class="page--tpl__title"><?php print $site_slogan; ?></div>
     </div>
   </div>
 </div>

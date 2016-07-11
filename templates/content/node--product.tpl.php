@@ -47,7 +47,7 @@ if ($teaser): ?>
           /**
            * Toon de pakket prijs enkel als dit veld inhoud heeft toon anders de prijs per kilogram.
            */
-          $fieldPakketPrice = field_get_items('node', $node, 'cost');
+          $fieldPakketPrice = field_get_items('node', $node, 'field_pakketprijs');
           if ($fieldPakketPrice) {
             print $uc_pakketPrice;
           } else {

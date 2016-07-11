@@ -7,7 +7,15 @@
  */?>
 
   <div class="copyright container">
-      <!-- copyright -->
-      <?php print $copyright; ?>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- copyright -->
+        <?php print $copyright; ?>
+      </div>
+      <div class="col-md-6 footer--small__slogan">
+        <?php print $site_slogan; ?>
+      </div>
+    </div>
+
   </div>
 

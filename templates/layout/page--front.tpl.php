@@ -52,7 +52,7 @@ include __DIR__ . '/../includes/nav.inc.php';
         </div>
         <div class="col-md-9 sectionhomepage__title__cta">
           <div class="col-md-12">
-            <h1>KALFSVLEES VOOR ECHTE FIJNPROEVERS</h1>
+            <h1><?php print $site_slogan; ?></h1>
           </div>
           <div class="col-md-12 btn--cta">
             <?php
