@@ -2836,18 +2836,19 @@ footer {
   padding: 25px 15px; }
   .layoutcontent__bestellen h1, .layoutcontent__bestellen .page--tpl__logo .page--tpl__title, .page--tpl__logo .layoutcontent__bestellen .page--tpl__title {
     color: #000000; }
-  .layoutcontent__bestellen table {
+  .layoutcontent__bestellen .view-vleeskalender .views-table {
     margin-top: 25px;
     width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black; }
-    .layoutcontent__bestellen table td {
-      padding: 7px 5px;
-      border: 1px solid black; }
-    .layoutcontent__bestellen table th {
+    border-collapse: collapse; }
+    .layoutcontent__bestellen .view-vleeskalender .views-table th {
+      border-bottom: solid 1px;
       padding: 10px 5px;
-      border: 1px solid black;
       font-weight: bold; }
+    .layoutcontent__bestellen .view-vleeskalender .views-table td, .layoutcontent__bestellen .view-vleeskalender .views-table th {
+      border-left: 1px solid;
+      padding: 5px 10px; }
+    .layoutcontent__bestellen .view-vleeskalender .views-table td:first-child, .layoutcontent__bestellen .view-vleeskalender .views-table th:first-child {
+      border-left: none; }
 
 .page--tpl__logo {
   padding-top: 75px;

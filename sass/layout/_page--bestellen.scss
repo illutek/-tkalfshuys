@@ -8,22 +8,28 @@
   h1 {
     color: #000000;
   }
-  table {
-    margin-top: 25px;
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
-    thead {
 
-    }
-    td {
-      padding: 7px 5px;
-      border: 1px solid black;
-    }
-    th {
-      padding: 10px 5px;
-      border: 1px solid black;
-      font-weight: bold;
+
+  // Opmaak tabel slachtkalender
+
+  .view-vleeskalender {
+    .views-table {
+      margin-top: 25px;
+      width: 100%;
+      border-collapse: collapse;
+      th {
+        border-bottom: solid 1px;
+        padding: 10px 5px;
+        font-weight: bold;
+      }
+      td, th {
+        border-left: 1px solid;
+        padding: 5px 10px;
+      }
+      td:first-child , th:first-child{
+        border-left: none;
+      }
     }
   }
+
 }

@@ -21,7 +21,9 @@ Fout op page.tpl.php en andere door id="parallax-anchor" dat enkel op de front-p
 en parallax.js oproep verhuisd van het .info bestand naar template.php
 Parallax is hier niet het juiste woord, een TODO om de file name te veranderen
 
-###Bestel
+###Bestellen
+= node-werkwijze.scss  = opmaak slachttabel (inhoudstype) en werkwijze (inhoudstype)  
+  
 Om een link te leggen op een button(btn 'Bestelformulier') naar een upload pdf, dit alles in een node--.tpl.php file, 
 dient de markup rond dat veld verwijdert, volgende zou dan niet lukken
 ´´´
@@ -30,6 +32,27 @@ print '<a href="' . render($content['field_pdf_bereidingen']) . '">' . '<button 
 Dit omdat out off the box Drupal een div rond een field plaatst, met de module no_field_markup 
 https://www.drupal.org/project/no_field_markup lossen we dit probleem op.
 (node--werkwijze.tpl.php)
+
+#### Opmaak tabel slachtkalender
+
+Een TODO tabel opmaken zie vb code hieronder 
+```
+.friends {
+  border-collapse: collapse;
+}
+
+.friends th {
+  border-bottom: 1px solid;
+}
+.friends td, .friends th {
+  border-left: 1px solid;
+  padding: 5px 10px;
+}
+.friends td:first-child, .friends th:first-child {
+  border-left: none;
+}
+```   
+
 
 ###Product-node-form
 Een aantal velden verwijdert (display: none) in het adminimal theme (style.css), niet de mooiste manier, maar het doel
