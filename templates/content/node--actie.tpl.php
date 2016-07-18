@@ -9,6 +9,6 @@
 <div class="actions--wrap__title">
   <h4><?php print $title; ?> <i class="fa fa-caret-down" aria-hidden="true"></i></h4>
 </div>
-<div class="actions--wrap__body col-md-6 action__hide">
+<div class="actions--wrap__body col-md-6">
   <?php print render($content['body']); ?>
 </div>
