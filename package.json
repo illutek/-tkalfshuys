@@ -1,0 +1,28 @@
+{
+  "name": "kalfshuys",
+  "version": "0.0.0",
+  "description": "Voor Steven van Nijlen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/illutek/-tkalfshuys.git"
+  },
+  "author": "Stefan",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/illutek/-tkalfshuys/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-jsmin": "~0.1.5",
+    "del": "~2.2.2",
+    "gulp-cache": "~0.4.5",
+    "gulp-plumber": "~1.1.0",
+    "gulp-sass": "~2.3.2",
+    "gulp-rename": "~1.2.2",
+    "gulp-clean-css": "~2.0.12"
+  }
+}

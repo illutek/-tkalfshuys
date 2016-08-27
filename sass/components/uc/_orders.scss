@@ -1,0 +1,25 @@
+//=======================================
+// @@ ++ Orders view client (frontend)
+//=======================================
+
+.view-uc-orders-user {
+  table {
+    width: 100%;
+    th {
+      height: 25px;
+      a {
+        color: #ffffff;
+      }
+    }
+    tr.even, tr.odd {
+      height: 35px;
+    }
+    td {
+      &.active {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+

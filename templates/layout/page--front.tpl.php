@@ -46,7 +46,7 @@ include __DIR__ . '/../includes/nav.inc.php';
           </div>
           <div class="homepage__logo--small">
             <a href="<?php print $front_page; ?>">
-              <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png"/>
+              <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_small.png" alt="tKalfshuys-logo"/>
             </a>
           </div>
         </div>

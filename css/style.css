@@ -42,6 +42,7 @@ table {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -133,6 +134,7 @@ table {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -140,6 +142,7 @@ table {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
+
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
@@ -2680,7 +2683,7 @@ p {
   margin-top: 50px; }
 
 .maintenance-page {
-  background: url("../images/runderen.jpg") no-repeat;
+  background: url("../images/runderen_kalfshuys.jpg") no-repeat;
   position: absolute;
   height: 100%;
   background-size: cover;
@@ -2715,7 +2718,7 @@ p {
   background-color: #000000;
   position: relative; }
   .section--homepage .sectionhomepage__bcg {
-    background: url("../images/runderen.jpg") no-repeat;
+    background: url("../images/runderen_kalfshuys_gras.jpg") no-repeat;
     position: absolute;
     height: 101%;
     background-size: cover;
@@ -2769,7 +2772,7 @@ p {
   .section--corebusiness .container--corebusiness {
     padding-top: 10%; }
   .section--corebusiness .corebusiness__region {
-    height: 650px;
+    height: 750px;
     background-color: #888888; }
     .section--corebusiness .corebusiness__region header {
       position: absolute;
@@ -2894,10 +2897,12 @@ footer {
   border: none; }
   .navbar-inverse .navbar-toggle:hover {
     background-color: transparent; }
+
 .navbar-inverse .navbar--brand a {
   color: #ffffff; }
   .navbar-inverse .navbar--brand a:hover {
     color: #adadad; }
+
 .navbar-inverse .navbar--brand .navbar-brand {
   padding: 20px 15px; }
 
@@ -2928,10 +2933,13 @@ footer {
     right: 10px; }
     .actions--wrap .actions--wrap__title h4 {
       font-size: 16px; } }
+
 .webform-component-textarea textarea {
   padding: 5px; }
+
 .webform-component-textarea .grippie {
   display: none; }
+
 .webform-component-textarea input[type=text], .webform-component-textarea input[type=email] {
   width: 100%;
   padding: 5px;
@@ -2982,6 +2990,7 @@ fieldset.collapsible {
     display: block; }
   .contactregion--form .mobilephone__desktop {
     display: none; } }
+
 .werkwijze--node__wrap {
   margin-top: 35px; }
   .werkwijze--node__wrap h3 {
@@ -3031,11 +3040,14 @@ fieldset.collapsible {
   #uc-cart-view-form table .product-description {
     font-size: 12px;
     padding-top: 10px; }
+
 #uc-cart-view-form input#edit-continue-shopping {
   background: #f6656a;
   color: #ffffff; }
+
 #uc-cart-view-form .form-actions {
   margin-top: 10px; }
+
 #uc-cart-view-form .price, #uc-cart-view-form .subtotal, #uc-cart-view-form th {
   display: none; }
 
@@ -3096,22 +3108,37 @@ form.uc-cart-checkout-form {
 table.order-review-table table {
   margin-top: 10px;
   margin-bottom: 10px; }
+
 table.order-review-table td, table.order-review-table th {
   padding: 2px 10px; }
   table.order-review-table td.price, table.order-review-table th.price {
     display: none; }
+
+.view-uc-orders-user table {
+  width: 100%; }
+  .view-uc-orders-user table th {
+    height: 25px; }
+    .view-uc-orders-user table th a {
+      color: #ffffff; }
+  .view-uc-orders-user table tr.even, .view-uc-orders-user table tr.odd {
+    height: 35px; }
+  .view-uc-orders-user table td.active {
+    padding: 10px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/
   /* facebook in de footer*/
   .fb_iframe_widget {
     width: 245px; } }
+
 @media only screen and (max-width: 960px) {
   /* css code voor tablets in portrait mode */
   h1, .page--tpl__logo .page--tpl__title {
     font-size: 2.9em; } }
+
 @media only screen and (max-width: 767px) {
   /* css code voor smartphones in landscape mode */ }
+
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
   .homepage--container {
@@ -3126,55 +3153,47 @@ table.order-review-table td, table.order-review-table th {
         transition: all 0.4s ease-in-out;
         margin-top: 55px;
         font-size: 1.6em; }
-
   .section--page .sectionpage__container__wrap {
     margin: 20px 0; }
-
   .sectionhomepage__title__cta {
     padding-top: 20px; }
-
   .page--tpl__logo {
     padding-top: 10px;
     margin-bottom: 5px; }
-
   .section--quality {
     padding: 15px 0; }
     .section--quality .paragraph {
       padding: 15px 0; }
     .section--quality .logo {
       display: none; }
-
   .section--corebusiness .corebusiness__region {
     margin: 10px 0; }
     .section--corebusiness .corebusiness__region .corebusiness__item {
       padding: 10px 15px; }
     .section--corebusiness .corebusiness__region h4 {
       font-size: 1.8em; }
-
   .section--page {
     display: block;
     margin-top: 50px; }
     .section--page .layout--content {
       margin-bottom: 25px; }
-
   h1, .page--tpl__logo .page--tpl__title {
     font-size: 2.3em; }
-
   h2 {
     font-size: 2.1em; }
-
   h3 {
     font-size: 1.9em; }
-
   .btncta__btn, .btncontact__btn, .btnmobile__btn {
     padding: 10px;
     font-size: 1.6em; }
     .btncta__btn .fa-shopping-basket, .btncontact__btn .fa-shopping-basket, .btnmobile__btn .fa-shopping-basket {
       padding: 0 10px 0; }
-
+  .contactregion--form .btnmobile__btn {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 1.2em; }
   .view-id-vleeskalender {
     font-size: 12px; }
-
   .view-id-producten {
     font-size: 12px; }
     .view-id-producten table td {
@@ -3183,10 +3202,8 @@ table.order-review-table td, table.order-review-table th {
       font-size: 10px; }
     .view-id-producten td.views-field-uc-product-image, .view-id-producten .views-field-view-node {
       display: none; }
-
   .product_list .product_img {
     display: none; }
-
   #cart-form-pane {
     font-size: 12px; }
     #cart-form-pane input[type="submit"] {
@@ -3194,17 +3211,13 @@ table.order-review-table td, table.order-review-table th {
       margin-bottom: 10px; }
     #cart-form-pane td.image {
       display: none; }
-
   #uc-cart-view-form .form-actions {
     margin-top: 0;
     padding: 0; }
-
   .uc-cart-item-uc-cart-item {
     height: 5px; }
-
   .uc-store-address-field .form-item label {
     text-align: left; }
-
   .order-review-table {
     width: 360px; }
     .order-review-table td, .order-review-table .title-col {
@@ -3214,10 +3227,8 @@ table.order-review-table td, table.order-review-table th {
       padding-right: 5px; }
     .order-review-table .review-button-row td {
       text-align: left; }
-
   .footermain__item {
     margin-bottom: 25px; }
-
   .footer .footer--main .call-us--region {
     height: 410px; }
   .footer .footer--main .mobilephone__mobile {
@@ -3228,8 +3239,5 @@ table.order-review-table td, table.order-review-table th {
     margin-top: 20px;
     padding: 8px;
     font-size: 1.2em; }
-
   .footer__small {
     display: none; } }
-
-/*# sourceMappingURL=style.css.map */
