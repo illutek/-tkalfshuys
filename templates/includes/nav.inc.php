@@ -58,9 +58,12 @@
             print '<li class="first">
                         <a href="' . url('user') . '">' . t(' Inloggen') . '</a>
                         </li>';
-            print '<li>
+            /**
+             * Het registeren link op 2016-09-02 uitgeschakeld
+             * print '<li>
                         <a href="' . url('user/register') . '">' . t(' Registeer') . '</a>
                         </li>';
+             */
           }
 
           /**
