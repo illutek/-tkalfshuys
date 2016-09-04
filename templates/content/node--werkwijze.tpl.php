@@ -11,6 +11,8 @@
  * Kalfs of runds link naar forms is afhankelijk van keuze kalfs of runds
  */
 if ($teaser): ?>
+
+
   <div class="werkwijze--teaser__wrap">
     <?php print '<h3>' . render($content['field_titel_pdf_blok']) . '</h3>' . render($content['field_info_pdf']); ?>
 
@@ -39,19 +41,19 @@ if ($teaser): ?>
  * hier de volledige node
  */
 else:
-  $huisBereidingUrl = '<a href="producten-huisbereidingen">' . '<button class="btn-default btnbestellen__btn">' . t('Huisbereidingen') . '</button></a>';
-  $kalfsProductsUrl = '<a href="producten-kalfsvlees">' . '<button class="btn-default btnbestellen__btn">' . t('Kalfsvlees') . '</button></a>';
-  $rundsProductsUrl = '<a href="producten-rundsvlees">' . '<button class="btn-default btnbestellen__btn">' . t('Rundsvlees') . '</button></a>';
+  /**
+   * $huisBereidingUrl, $kalfsProductsUrl en $rundsProductsUrl naar template.php
+   * $selectKalfs = ($field_wat_verkocht["und"][0]["value"] === "kalfs");
+   * $selectRunds = ($field_wat_verkocht["und"][0]["value"] === "runds");
+   */
 
-  $selectKalfs = ($field_wat_verkocht["und"][0]["value"] === "kalfs");
-  $selectRunds = ($field_wat_verkocht["und"][0]["value"] === "runds");
   $values = [];
 
   /**
    * array vullen
    */
   foreach ($field_wat_verkocht["und"] as $key => $value) {
-      $values[] = $value["value"];
+    $values[] = $value["value"];
   }
 
   ?>
@@ -72,7 +74,5 @@ else:
       return $url;
     }, $values)));
     ?>
-    <br>
-
   </div>
 <?php endif; ?>

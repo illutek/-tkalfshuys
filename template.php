@@ -27,10 +27,16 @@ function kalfshuys_preprocess_html(&$variables)
  */
 function kalfshuys_preprocess_node(&$variables)
 {
-
   $variables['pdfBereidingen'] = drupal_render($variables['content']['field_pdf_bereidingen']);
   $variables['pdfKalfsvlees'] = drupal_render($variables['content']['field_pdf_kalfsvlees']);
   $variables['pdfRundsvlees'] = drupal_render($variables['content']['field_pdf_rundsvlees']);
+
+  $variables['huisBereidingUrl'] = '<a href="producten-huisbereidingen">' .
+    '<button class="btn-default btnbestellen__btn">' . t('Huisbereidingen') . '</button></a>';
+  $variables['kalfsProductsUrl'] = '<a href="producten-kalfsvlees">' .
+    '<button class="btn-default btnbestellen__btn">' . t('Kalfsvlees') . '</button></a>';
+  $variables['rundsProductsUrl'] = '<a href="producten-rundsvlees">' .
+    '<button class="btn-default btnbestellen__btn">' . t('Rundsvlees') . '</button></a>';
 
   if (module_exists('uc_product') && uc_product_is_product($variables)){
     $variables['uc_image_teaser'] = drupal_render($variables['content']['uc_product_image'][0]);
