@@ -72,8 +72,9 @@
   .section--corebusiness {
     .corebusiness__region {
       margin: 10px 0;
+      min-height: 400px;
       .corebusiness__item {
-        padding: 10px 15px;
+        padding: 10px 15px 50px;
       }
       h4 {
         font-size: 1.8em;
@@ -221,7 +222,6 @@
   .footer__small {
     display: none;
   }
-
 }
 
 

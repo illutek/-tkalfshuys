@@ -2772,7 +2772,7 @@ p {
   .section--corebusiness .container--corebusiness {
     padding-top: 10%; }
   .section--corebusiness .corebusiness__region {
-    height: 750px;
+    min-height: 750px;
     background-color: #888888; }
     .section--corebusiness .corebusiness__region header {
       position: absolute;
@@ -3167,9 +3167,10 @@ table.order-review-table td, table.order-review-table th {
     .section--quality .logo {
       display: none; }
   .section--corebusiness .corebusiness__region {
-    margin: 10px 0; }
+    margin: 10px 0;
+    min-height: 400px; }
     .section--corebusiness .corebusiness__region .corebusiness__item {
-      padding: 10px 15px; }
+      padding: 10px 15px 50px; }
     .section--corebusiness .corebusiness__region h4 {
       font-size: 1.8em; }
   .section--page {
