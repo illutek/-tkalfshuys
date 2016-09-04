@@ -7,7 +7,8 @@
  */ ?>
 <?php
 /**
- * Hier de teaser met linken naar de verschillende beste formulieren
+ * Hier de teaser met linken naar de verschillende bestel PDF formulieren
+ * De volledige node de linken naar de producten
  * Kalfs of runds link naar forms is afhankelijk van keuze kalfs of runds
  */
 if ($teaser): ?>
@@ -36,7 +37,7 @@ if ($teaser): ?>
   </div>
 <?php
 /**
- * hier de volledige node
+ * hier de volledige node 
  */
 else: ?>
   <div class="werkwijze--node__wrap">
