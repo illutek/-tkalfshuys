@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 
 
@@ -8,8 +9,10 @@ var plumber = require('gulp-plumber');
 // /////////////////////////////////////////////
 gulp.task('sass', function () {
     return gulp.src('sass/**/*.{scss,sass}')
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css'));
 });
 
