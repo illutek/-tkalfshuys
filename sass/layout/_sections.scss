@@ -98,13 +98,17 @@
       }
     }
     .corebusiness__item {
-      padding: 35px 15px;
+      padding: 15px 15px;
       //min-height: 37vh;
     }
     .corebusiness__title {
     }
     .corebusiness__img {
       overflow: hidden;
+      img {
+        width: 100%;
+        height: 250px;
+      }
     }
   }
 }
